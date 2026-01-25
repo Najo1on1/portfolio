@@ -1,0 +1,37 @@
+/* styles.css */
+
+/* Add breathing room between the Certification column and the Project column */
+.grid {
+  gap: 2rem;
+  margin-bottom: 3rem; /* Space between rows */
+}
+
+/* Ensure images (like diagrams) scale down on mobile screens */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; /* Slight rounded corners for diagrams */
+}
+
+/* Center the Cert badges and add spacing */
+.g-col-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center badges horizontally */
+  gap: 1rem; /* Space between badges */
+  border-right: 1px solid #eee; /* Light divider line */
+  padding-right: 1rem;
+}
+
+/* Dark mode adjustment for the divider line */
+body.quarto-dark .g-col-4 {
+  border-right: 1px solid #444;
+}
+
+/* Make the 'Executive Summary' text a bit larger and readable */
+.column-page {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}

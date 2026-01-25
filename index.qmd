@@ -1,0 +1,133 @@
+---
+title: "Technical Competency Matrix"
+subtitle: "Cloud Architecture | Data Engineering | AI Research"
+---
+
+:::{.column-page}
+# Executive Summary
+I am a Master's graduate in AI & Machine Learning with a focus on **productionizing AI systems**. This portfolio demonstrates my competency in **Cloud Architecture** (AWS/GCP), **Data Pipelines**, and **Deep Learning Research**, validated by industry certifications and rigorous engineering projects.
+:::
+
+---
+
+## 1. Cloud & MLOps (AWS/GCP) {#cloud}
+
+:::{.grid}
+
+:::{.g-col-4}
+### Certifications
+![](images/Generative AI Architect - Training Badge.png){width=100} **GenAI Architect**
+<br>
+![](images/Generative AI Practitioner - Training Badge.png){width=100} **GenAI Practitioner**
+<br>
+![](images/Cloud Foundations - Training Badge.png){width=100} **Cloud Foundations**
+<br>
+![](images/Google Cloud Fundamentals Core Infrastructure.png){width=100} **Google Core Infra**
+:::
+
+:::{.g-col-8}
+### Competency Evidence
+To demonstrate these skills, I built a **Serverless Inspection Pipeline** and a **Carbon-Aware Scheduler**.
+
+#### **A. Serverless AI Pipeline (Edge-to-Cloud)**
+*Objective: Sub-100ms defect detection for manufacturing.*
+
+![](images/Serverless AI Pipeline for Quality Inspection description/diagram-export-4-26-2025-12_59_07-PM.png){width=100%}
+
+* **Tech Stack:** AWS Greengrass, Lambda, IoT Core, PyTorch.
+* **Key Result:** Achieved <100ms latency using local edge inference.
+* [**View Source on GitHub**](https://github.com/Najo1on1/Serverless-AI-Pipeline-for-High-Throughput-Quality-Inspection-on-AWS){.btn .btn-primary role="button"}
+
+#### **B. Carbon-Aware Agentic Scheduler**
+*Objective: Reducing AI training carbon footprint by 13.4%.*
+
+```{mermaid}
+%%| label: fig-carbon
+%%| fig-cap: "Multi-Agent Workflow"
+flowchart LR
+    Watcher[Watcher Agent] -->|Polls Grid API| History[(Grid History)]
+    History -->|Carbon Forecast| Scheduler[Scheduler Agent]
+    Scheduler -->|Decision| Action{Run or Defer?}
+    Action -- High Carbon --> Defer((Defer Job))
+    Action -- Low Carbon --> Run((Run Now))
+
+```
+
+* **Architecture:** A multi-agent system using **LangGraph** to shift workloads to low-carbon time windows.
+* **Key Result:** 13.4% reduction in CO2 emissions during "Golden Week" simulation.
+* [**View Source on GitHub**](https://github.com/Najo1on1/carbon-aware-scheduler){.btn .btn-primary role="button"}
+
+:::
+
+:::
+
+---
+
+## 2. Data Engineering (Pipelines) {#data}
+
+:::{.grid}
+
+:::{.g-col-4}
+
+### Certifications
+
+![](images/Build a Data Warehouse with BigQuery Skill Badge.png){width=100} **BigQuery Data Warehouse**
+:::
+
+:::{.g-col-8}
+
+### Competency Evidence
+
+I engineered the **EuroAgri Pipeline**, a scalable system harmonizing heterogeneous geospatial data.
+
+#### **EuroAgri Pipeline**
+
+*Objective: Generate climate-adaptive agronomic insights from raw soil/weather data.*
+
+![](images/EuroAgri Pipeline/schema_metagraph.png){width=100%}
+
+* **Innovation:** Developed a transparent heuristic engine to impute missing Nitrogen/Phosphorus data.
+* **Output:** Structured Parquet datasets and a Neo4j Knowledge Graph.
+* [**View Source on GitHub**](https://github.com/Najo1on1/euroagri-pipeline){.btn .btn-success role="button"}
+:::
+
+:::
+
+---
+
+## 3. AI Research (Deep Learning) {#ai}
+
+:::{.grid}
+
+:::{.g-col-4}
+
+### Certifications
+
+![](images/Machine Learning - Training Badge.png){width=100} **AWS Machine Learning**
+
+
+
+
+
+![](images/Prompt Design in Vertex AI Skill Badge.png){width=100} **Vertex AI Prompt Design**
+:::
+
+:::{.g-col-8}
+
+### Competency Evidence
+
+My Master's dissertation focused on **calibrated uncertainty quantification** for the Irish Power System.
+
+#### **Net-Load Forecasting with MC-Dropout**
+
+* **Methodology:** Developed a **MC-Dropout LSTM** network to predict net-load volatility.
+* **Anomaly Detection:** Implemented Residual-Based detection using **Deep SVDD**.
+* **Key Artifacts:** * *Uncertainty Plots:* Visualized 80% and 95% confidence intervals.
+* *Statistical Validation:* Confirmed superiority over ARIMA-GARCH using Diebold-Mariano tests.
+
+
+
+[**Download Dissertation Overview (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
+:::
+
+:::
