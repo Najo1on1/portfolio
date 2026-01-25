@@ -22,7 +22,7 @@ I am a Master's graduate in AI & Machine Learning with a focus on **productioniz
 <br>
 ![](images/Cloud Foundations - Training Badge.png){width=100} **Cloud Foundations**
 <br>
-![](images/Google Cloud Fundamentals Core Infrastructure.png){width=100} **Google Core Infra**
+![](images/Google Cloud Fundamentals Core Infrastructure.png){width=100} **Google Core Infrastructure**
 :::
 
 :::{.g-col-8}
