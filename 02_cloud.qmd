@@ -15,7 +15,7 @@ format:
 :::
 :::{.g-col-6}
 ![](images/Google Cloud Fundamentals Core Infrastructure.png){width=150}
-**Google Core Infra**
+**Google Core Infrastructure**
 :::
 :::
 
