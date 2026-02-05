@@ -93,3 +93,28 @@ body.quarto-dark .project-text {
   gap: 1rem;           /* Adds space between the two buttons */
   flex-wrap: wrap;     /* Ensures they stack nicely on mobile */
 }
+
+/* TECH PILLS: Small tags for skills */
+.tech-tag {
+  display: inline-block;
+  background-color: #f0f2f5;
+  color: #444;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+body.quarto-dark .tech-tag {
+  background-color: #2d2d2d;
+  color: #ccc;
+  border: 1px solid #444;
+}
+
+/* Add spacing between Project Title and Tags */
+h3 {
+  margin-bottom: 0.5rem;
+}
