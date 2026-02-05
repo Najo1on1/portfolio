@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Jonathan Muwanguzi | AI & Cloud Engineer"
+  
   navbar:
     left:
       - text: "Competency Dashboard"
@@ -14,14 +15,14 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/muwanguzi-jonathan-a0b766124/
   page-footer:
-    center: "© 2025 Jonathan Muwanguzi. Built with Quarto."
+    center: "© 2026 Jonathan Muwanguzi. Built with Quarto."
 
 format:
   html:
-    # This enables the Dark/Light mode toggle
-    theme: 
-      light: cosmo      # The clean white theme 
-      dark: superhero   # A professional dark blue/grey theme
+    theme:
+      light: cosmo
+      dark: superhero
     toc: true
     smooth-scroll: true
     css: styles.css
+    lightbox: auto

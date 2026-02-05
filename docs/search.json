@@ -4,27 +4,27 @@
     "href": "index.html",
     "title": "Technical Competency Matrix",
     "section": "",
-    "text": "I am a Master’s graduate in AI & Machine Learning with a focus on productionizing AI systems. This portfolio demonstrates my competency in Cloud Architecture (AWS/GCP), Data Pipelines, and Deep Learning Research, validated by industry certifications and rigorous engineering projects."
+    "text": "AI & Cloud Engineer specializing in production-grade ML systems. Competencies include Serverless Architecture (AWS/GCP), Data Pipelines, and Calibrated Uncertainty Quantification, validated by 5+ Industry Certifications."
   },
   {
     "objectID": "index.html#cloud",
     "href": "index.html#cloud",
     "title": "Technical Competency Matrix",
     "section": "1. Cloud & MLOps (AWS/GCP)",
-    "text": "1. Cloud & MLOps (AWS/GCP)\n\n\nCertifications\n GenAI Architect   GenAI Practitioner   Cloud Foundations   Google Core Infra\n\n\nCompetency Evidence\nTo demonstrate these skills, I built a Serverless Inspection Pipeline and a Carbon-Aware Scheduler.\n\nA. Serverless AI Pipeline (Edge-to-Cloud)\nObjective: Sub-100ms defect detection for manufacturing.\n\n\nTech Stack: AWS Greengrass, Lambda, IoT Core, PyTorch.\nKey Result: Achieved &lt;100ms latency using local edge inference.\nView Source on GitHub\n\n\n\nB. Carbon-Aware Agentic Scheduler\nObjective: Reducing AI training carbon footprint by 13.4%.\n\n\n\n\n\n\nflowchart LR\n    Watcher[Watcher Agent] --&gt;|Polls Grid API| History[(Grid History)]\n    History --&gt;|Carbon Forecast| Scheduler[Scheduler Agent]\n    Scheduler --&gt;|Decision| Action{Run or Defer?}\n    Action -- High Carbon --&gt; Defer((Defer Job))\n    Action -- Low Carbon --&gt; Run((Run Now))\n\n\n\n\n\nFigure 1: Multi-Agent Workflow\n\n\n\n\n\n\nArchitecture: A multi-agent system using LangGraph to shift workloads to low-carbon time windows.\nKey Result: 13.4% reduction in CO2 emissions during “Golden Week” simulation.\nView Source on GitHub"
+    "text": "1. Cloud & MLOps (AWS/GCP)\n\n\nCertifications\n\n Solutions Architect\n\n\n GenAI Architect\n\n\n Cloud Foundations\n\n\n Google Core Infra\n\n\n\n\nServerless AI Pipeline (Edge-to-Cloud)\n\nDesigned to achieve sub-100ms defect detection in manufacturing environments, this pipeline integrates AWS Greengrass and IoT Core for robust edge computing. By deploying PyTorch models directly to the edge, I eliminated cloud latency, ensuring real-time inference while maintaining a serverless Lambda backend for asynchronous data aggregation and analytics.\n\n\n\nView Code on GitHub\n\n\n\nCarbon-Aware Agentic Scheduler\n\nA multi-agent system built with LangGraph that dynamically schedules AI training jobs based on real-time grid carbon intensity. By integrating “Watcher” and “Scheduler” agents, the system autonomously shifts heavy compute workloads to low-carbon time windows, achieving a demonstrated 13.4% reduction in CO2 emissions during simulation.\n\n\n\nView Code on GitHub"
   },
   {
     "objectID": "index.html#data",
     "href": "index.html#data",
     "title": "Technical Competency Matrix",
     "section": "2. Data Engineering (Pipelines)",
-    "text": "2. Data Engineering (Pipelines)\n\n\nCertifications\n BigQuery Data Warehouse\n\n\nCompetency Evidence\nI engineered the EuroAgri Pipeline, a scalable system harmonizing heterogeneous geospatial data.\n\nEuroAgri Pipeline\nObjective: Generate climate-adaptive agronomic insights from raw soil/weather data.\n\n\nInnovation: Developed a transparent heuristic engine to impute missing Nitrogen/Phosphorus data.\nOutput: Structured Parquet datasets and a Neo4j Knowledge Graph.\nView Source on GitHub"
+    "text": "2. Data Engineering (Pipelines)\n\n\nCertifications\n\n BigQuery Data Warehouse\n\n\n\nEuroAgri Pipeline\n\nI engineered this scalable data system to harmonize heterogeneous geospatial inputs into climate-adaptive agronomic insights. The pipeline features a custom heuristic imputation engine for missing soil chemistry data (Nitrogen/Phosphorus) and automates the transformation of raw weather logs into structured Parquet datasets and a traversable Neo4j Knowledge Graph.\n\n\n\nView Code on GitHub"
   },
   {
     "objectID": "index.html#ai",
     "href": "index.html#ai",
     "title": "Technical Competency Matrix",
     "section": "3. AI Research (Deep Learning)",
-    "text": "3. AI Research (Deep Learning)\n\n\nCertifications\n AWS Machine Learning\n Vertex AI Prompt Design\n\n\nCompetency Evidence\nMy Master’s dissertation focused on calibrated uncertainty quantification for the Irish Power System.\n\nNet-Load Forecasting with MC-Dropout\n\nMethodology: Developed a MC-Dropout LSTM network to predict net-load volatility.\nAnomaly Detection: Implemented Residual-Based detection using Deep SVDD.\nKey Artifacts: * Uncertainty Plots: Visualized 80% and 95% confidence intervals.\nStatistical Validation: Confirmed superiority over ARIMA-GARCH using Diebold-Mariano tests.\n\nDownload Dissertation Overview (PDF)"
+    "text": "3. AI Research (Deep Learning)\n\n\nCertifications\n\n AWS Machine Learning\n\n\n Vertex AI Prompt Design\n\n\n\nNet-Load Forecasting with MC-Dropout\n\nMy Master’s dissertation focused on calibrated uncertainty quantification for the Irish Power System, moving beyond simple point predictions. I developed a Monte Carlo Dropout LSTM network to predict net-load volatility and implemented a Deep SVDD (Support Vector Data Description) model for residual-based anomaly detection, statistically outperforming ARIMA-GARCH baselines.\n\n\nDownload Dissertation Overview (PDF)\n\n\n\n\n\n\n\nServerless AI Pipeline Architecture\n\n\nMulti-Agent Scheduler Architecture\n\n\nEuroAgri Knowledge Graph Schema"
   }
 ]
