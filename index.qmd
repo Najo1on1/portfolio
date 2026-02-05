@@ -4,17 +4,95 @@ subtitle: "AI & Cloud Engineer | Hybrid Architectures"
 page-layout: full
 ---
 
+:::{.grid .align-items-center}
+
+:::{.g-col-12 .g-col-md-5}
+# Hybrid Architectures.
+# Real-World Impact.
+
+**I build AI systems that scale on the Cloud and execute on the Edge.**
+
+From **autonomous drones** (Edge AI) to **carbon-aware schedulers** (AWS), my work bridges the gap between massive cloud compute and constrained industrial hardware.
+:::
+
+:::{.g-col-12 .g-col-md-7}
+```{=html}
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <img src="images/Aegis_Drone_Demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Drone Demo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="margin-bottom:0;">Aegis Overwatch</h5>
+        <small>Autonomous Drone Vision (Edge AI)</small>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/Eco_Sentry_Edge_Demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Edge Security">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="margin-bottom:0;">Eco Sentry Edge</h5>
+        <small>Cognitive Firewall & Vector Anomaly Detection</small>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/Eco_Sentry_Cloud_Demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Cloud Platform">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="margin-bottom:0;">Cloud Command</h5>
+        <small>Hybrid Gemini + Neo4j Architecture</small>
+      </div>
+    </div>
+
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+```
+
+:::
+
+:::
+
+```{=html}
+<div class="marquee-container">
+  <div class="marquee-content">
+    <img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png" title="AWS Solutions Architect">
+    <img src="images/AWS Cloud Quest Generative AI Architect - Training Badge.png" title="GenAI Architect">
+    <img src="images/Google Cloud Fundamentals Core Infrastructure.png" title="GCP Core Infra">
+    <img src="images/Build a Data Warehouse with BigQuery Skill Badge.png" title="BigQuery Data Warehouse">
+    <img src="images/AWS Cloud Quest Machine Learning - Training Badge.png" title="AWS Machine Learning">
+    <img src="images/Prompt Design in Vertex AI Skill Badge.png" title="Vertex AI Prompt Design">
+    <img src="images/AWS Academy Graduate - Cloud Foundations - Training Badge.png" title="Cloud Foundations">
+    
+    <img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png">
+    <img src="images/AWS Cloud Quest Generative AI Architect - Training Badge.png">
+    <img src="images/Google Cloud Fundamentals Core Infrastructure.png">
+    <img src="images/Build a Data Warehouse with BigQuery Skill Badge.png">
+    <img src="images/AWS Cloud Quest Machine Learning - Training Badge.png">
+    <img src="images/Prompt Design in Vertex AI Skill Badge.png">
+    <img src="images/AWS Academy Graduate - Cloud Foundations - Training Badge.png">
+  </div>
+</div>
+
+```
+
 :::{.grid}
 
 :::{.g-col-12}
-# Technical Competency Matrix
 
-**I build systems that scale on the Cloud and run efficiently on the Edge.**
+### Explore Competencies
 
-Select a domain below to view relevant projects, codebases, and architectural diagrams.
 :::
 
 :::{.g-col-4}
+
 ```{=html}
 <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
   <div class="card-body">
