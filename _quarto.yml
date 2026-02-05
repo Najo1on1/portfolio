@@ -3,17 +3,23 @@ project:
   output-dir: docs
 
 website:
-  title: "Jonathan Muwanguzi | AI & Cloud Engineer"
-  
+  title: "JM"
   navbar:
     left:
-      - text: "Competency Dashboard"
-        href: index.qmd
+      - href: index.qmd
+        text: Home
+      - href: 01_edge.qmd
+        text: Edge AI
+      - href: 02_cloud.qmd
+        text: Cloud
+      - href: 03_data.qmd
+        text: Data
     right:
       - icon: github
         href: https://github.com/Najo1on1
       - icon: linkedin
         href: https://www.linkedin.com/in/muwanguzi-jonathan-a0b766124/
+  
   page-footer:
     center: "© 2026 Jonathan Muwanguzi. Built with Quarto."
 
@@ -22,7 +28,7 @@ format:
     theme:
       light: cosmo
       dark: superhero
+    css: styles.css
     toc: true
     smooth-scroll: true
-    css: styles.css
     lightbox: auto

@@ -1,5 +1,14 @@
 {
   "index.qmd": {
     "index.html": "45d52815"
+  },
+  "03_data.qmd": {
+    "03_data.html": "534d7aa7"
+  },
+  "01_edge.qmd": {
+    "01_edge.html": "61e2e119"
+  },
+  "02_cloud.qmd": {
+    "02_cloud.html": "62b2670c"
   }
 }

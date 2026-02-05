@@ -2,29 +2,29 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Technical Competency Matrix",
+    "title": "Jonathan Muwanguzi",
     "section": "",
-    "text": "AI & Cloud Engineer specializing in production-grade ML systems. Competencies include Serverless Architecture (AWS/GCP), Data Pipelines, and Calibrated Uncertainty Quantification, validated by 5+ Industry Certifications."
+    "text": "Technical Competency Matrix\nI build systems that scale on the Cloud and run efficiently on the Edge.\nSelect a domain below to view relevant projects, codebases, and architectural diagrams.\n\n\n\n  \n    Edge AI & Offline\n    Privacy-first agents running on local hardware (NVIDIA RTX/Jetson). Green-AI, Drones, and Cognitive Firewalls.\n    View Edge Projects →\n  \n\n\n\n\n\n  \n    Cloud & Hybrid\n    Scalable architectures on AWS & GCP. Multi-agent schedulers, Serverless pipelines, and Industrial Vision.\n    View Cloud Projects →\n  \n\n\n\n\n\n  \n    Data & Research\n    Rigorous ETL pipelines, Knowledge Graphs (Neo4j), and Deep Learning Research (Bayesian LSTM).\n    View Research →"
   },
   {
-    "objectID": "index.html#cloud",
-    "href": "index.html#cloud",
-    "title": "Technical Competency Matrix",
-    "section": "1. Cloud & MLOps (AWS/GCP)",
-    "text": "1. Cloud & MLOps (AWS/GCP)\n\n\nCertifications\n\n Solutions Architect\n\n\n GenAI Architect\n\n\n Cloud Foundations\n\n\n Google Core Infra\n\n\n\n\nServerless AI Pipeline (Edge-to-Cloud)\n\nDesigned to achieve sub-100ms defect detection in manufacturing environments, this pipeline integrates AWS Greengrass and IoT Core for robust edge computing. By deploying PyTorch models directly to the edge, I eliminated cloud latency, ensuring real-time inference while maintaining a serverless Lambda backend for asynchronous data aggregation and analytics.\n\n\n\nView Code on GitHub\n\n\n\nCarbon-Aware Agentic Scheduler\n\nA multi-agent system built with LangGraph that dynamically schedules AI training jobs based on real-time grid carbon intensity. By integrating “Watcher” and “Scheduler” agents, the system autonomously shifts heavy compute workloads to low-carbon time windows, achieving a demonstrated 13.4% reduction in CO2 emissions during simulation.\n\n\n\nView Code on GitHub"
+    "objectID": "01_edge.html",
+    "href": "01_edge.html",
+    "title": "Edge AI & Local Inference",
+    "section": "",
+    "text": "1. Green-AI Cognitive Pipeline\nLocal LLM (Mistral) Neo4j LangGraph Energy-Aware\nThe “Flagship” Local Agent. This system replaces cloud APIs with a quantized local model to reduce carbon footprint and ensure data privacy.\n\nKey Innovation: A “Real-Time Energy Router” that measures the exact Joules per token.\nArchitecture: ReAct Agent switching between Graph (Structured) and Vector (Unstructured) memory.\n\n\nSystem ArchitectureLive Demo (GIF)\n\n\n\n\n\n\n\n\n\nView Code on GitHub\n\n\n\n2. Eco Sentry: Cognitive Edge Security\nTinyLlama-1.1B ChromaDB Docker\nA “Cognitive Firewall” running on the Edge Node.\n\nProblem: Traditional firewalls are rigid; Cloud SIEM is slow/expensive.\nSolution: A local Vector Database (ChromaDB) learns traffic patterns. Anomalies trigger a local TinyLlama agent to explain why the packet is dangerous.\n\n\nSystem ArchitectureLive Demo (GIF)\n\n\n\n\n\n\n\n\n\nView Code on GitHub\n\n\n\n3. Aegis Overwatch (Efficiency Route)\nOllama (LLaVA) OpenCV Neo4j\nA decentralized drone safety pipeline.\n\nWorkflow: “See-Think-Act” loop.\nTech: Uses Ollama (LLaVA) for vision and Neo4j for protocol enforcement, entirely offline.\n\n\nSystem ArchitectureLive Demo (GIF)\n\n\n\n\n\n\n\n\n\nView Code on GitHub\n\n\nNext: Cloud & Hybrid Architectures →"
   },
   {
-    "objectID": "index.html#data",
-    "href": "index.html#data",
-    "title": "Technical Competency Matrix",
-    "section": "2. Data Engineering (Pipelines)",
-    "text": "2. Data Engineering (Pipelines)\n\n\nCertifications\n\n BigQuery Data Warehouse\n\n\n\nEuroAgri Pipeline\n\nI engineered this scalable data system to harmonize heterogeneous geospatial inputs into climate-adaptive agronomic insights. The pipeline features a custom heuristic imputation engine for missing soil chemistry data (Nitrogen/Phosphorus) and automates the transformation of raw weather logs into structured Parquet datasets and a traversable Neo4j Knowledge Graph.\n\n\n\nView Code on GitHub"
+    "objectID": "03_data.html",
+    "href": "03_data.html",
+    "title": "Data Engineering & Research",
+    "section": "",
+    "text": "Certifications\n\n\n BigQuery Data Warehouse\n\n\n AWS Machine Learning\n\n\n\n\n\n1. EuroAgri Pipeline\nNeo4j Pandas ETL\nHarmonizing heterogeneous geospatial inputs into climate-adaptive agronomic insights.\n\nFeatures: Custom heuristic imputation engine for missing soil chemistry data.\n\n\nView Code on GitHub\n\n\n\n2. Net-Load Forecasting (Master’s Dissertation)\nBayesian LSTM Uncertainty Quantification\n\nResearch: Calibrated uncertainty quantification for the Irish Power System.\nModel: Monte Carlo Dropout LSTM + Deep SVDD for anomaly detection.\n\n\nView Project on GitHub Download Dissertation (PDF)\n\n\n← Previous: Cloud Systems Return to Home"
   },
   {
-    "objectID": "index.html#ai",
-    "href": "index.html#ai",
-    "title": "Technical Competency Matrix",
-    "section": "3. AI Research (Deep Learning)",
-    "text": "3. AI Research (Deep Learning)\n\n\nCertifications\n\n AWS Machine Learning\n\n\n Vertex AI Prompt Design\n\n\n\nNet-Load Forecasting with MC-Dropout\n\nMy Master’s dissertation focused on calibrated uncertainty quantification for the Irish Power System, moving beyond simple point predictions. I developed a Monte Carlo Dropout LSTM network to predict net-load volatility and implemented a Deep SVDD (Support Vector Data Description) model for residual-based anomaly detection, statistically outperforming ARIMA-GARCH baselines.\n\n\n\nView Project on GitHub Download Dissertation (PDF)\n\n\n\n\n\n\n\nServerless AI Pipeline Architecture\n\n\nMulti-Agent Scheduler Architecture\n\n\nEuroAgri Knowledge Graph Schema\n\n\nSystem Architecture: Bayesian LSTM & Anomaly Detection Pipeline"
+    "objectID": "02_cloud.html",
+    "href": "02_cloud.html",
+    "title": "Cloud-Native & Hybrid Systems",
+    "section": "",
+    "text": "Certifications\n\n\n AWS Solutions Architect\n\n\n Google Core Infra\n\n\n\n\n\n1. Eco Sentry: Cloud Hybrid Route\nGoogle Gemini API Neo4j Streamlit Async\nThe “Satellite Command” unit.\n\nHybrid Logic: Uses Google Gemini (Infinite Context) for vision but restricts decisions using a deterministic Neo4j Graph.\nEngineering: Implements an asynchronous “Pulse” architecture to handle API rate limits without freezing the video feed.\n\n\nSystem ArchitectureLive Demo (GIF)\n\n\n\n\n\n\n\n\n\nView Code on GitHub\n\n\n\n2. Carbon-Aware Agentic Scheduler\nAWS Lambda LangGraph Multi-Agent\nA system that schedules AI training jobs based on the carbon intensity of the electricity grid.\n\nView Code on GitHub\n\n\n\n3. Serverless AI Pipeline\nAWS Greengrass IoT Core PyTorch\nSub-100ms defect detection for manufacturing using AWS IoT Core.\n\nView Code on GitHub\n\n\n← Previous: Edge AI Next: Data & Research →"
   }
 ]

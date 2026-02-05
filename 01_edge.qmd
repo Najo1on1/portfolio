@@ -1,0 +1,72 @@
+---
+title: "Edge AI & Local Inference"
+subtitle: "Engineering privacy-first systems on consumer hardware (NVIDIA RTX 4060 Ti)."
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+# 1. Green-AI Cognitive Pipeline
+<span class="tech-tag">Local LLM (Mistral)</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">LangGraph</span> <span class="tech-tag">Energy-Aware</span>
+
+The "Flagship" Local Agent. This system replaces cloud APIs with a quantized local model to reduce carbon footprint and ensure data privacy.
+
+* **Key Innovation:** A "Real-Time Energy Router" that measures the exact Joules per token.
+* **Architecture:** ReAct Agent switching between Graph (Structured) and Vector (Unstructured) memory.
+
+::: {.panel-tabset}
+## System Architecture
+![](images/Green_AI_Architecture.png)
+
+## Live Demo (GIF)
+![](images/Green_AI_Demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/Green-AI-Pipeline){.btn .btn-primary role="button"}
+
+---
+
+# 2. Eco Sentry: Cognitive Edge Security
+<span class="tech-tag">TinyLlama-1.1B</span> <span class="tech-tag">ChromaDB</span> <span class="tech-tag">Docker</span>
+
+A "Cognitive Firewall" running on the Edge Node.
+
+* **Problem:** Traditional firewalls are rigid; Cloud SIEM is slow/expensive.
+* **Solution:** A local Vector Database (ChromaDB) learns traffic patterns. Anomalies trigger a local TinyLlama agent to explain *why* the packet is dangerous.
+
+::: {.panel-tabset}
+## System Architecture
+![](images/Eco_Sentry_Edge_Architecture.png)
+
+## Live Demo (GIF)
+![](images/Eco_Sentry_Edge_Demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/Eco-Sentry-Integrated-Edge-AI-Security-Pipeline){.btn .btn-primary role="button"}
+
+---
+
+# 3. Aegis Overwatch (Efficiency Route)
+<span class="tech-tag">Ollama (LLaVA)</span> <span class="tech-tag">OpenCV</span> <span class="tech-tag">Neo4j</span>
+
+A decentralized drone safety pipeline.
+
+* **Workflow:** "See-Think-Act" loop.
+* **Tech:** Uses Ollama (LLaVA) for vision and Neo4j for protocol enforcement, entirely offline.
+
+::: {.panel-tabset}
+## System Architecture
+![](images/Aegis_Drone_Architecture.png)
+
+## Live Demo (GIF)
+![](images/Aegis_Drone_Demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/Local-Eco-Sentry){.btn .btn-primary role="button"}
+
+<br><br>
+
+::: {style="display: flex; justify-content: flex-end;"}
+[**Next: Cloud & Hybrid Architectures** &rarr;](02_cloud.qmd){.btn .btn-primary .btn-lg role="button"}
+:::

@@ -1,0 +1,69 @@
+---
+title: "Cloud-Native & Hybrid Systems"
+subtitle: "Scalable architectures built on AWS and Google Cloud Platform."
+format:
+  html:
+    toc: true
+---
+
+# Certifications
+
+:::{.grid}
+:::{.g-col-6}
+![](images/AWS Cloud Quest Solutions Architect - Training Badge.png){width=150}
+**AWS Solutions Architect**
+:::
+:::{.g-col-6}
+![](images/Google Cloud Fundamentals Core Infrastructure.png){width=150}
+**Google Core Infra**
+:::
+:::
+
+---
+
+# 1. Eco Sentry: Cloud Hybrid Route
+<span class="tech-tag">Google Gemini API</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">Streamlit Async</span>
+
+The "Satellite Command" unit.
+
+* **Hybrid Logic:** Uses Google Gemini (Infinite Context) for vision but restricts decisions using a deterministic Neo4j Graph.
+* **Engineering:** Implements an asynchronous "Pulse" architecture to handle API rate limits without freezing the video feed.
+
+::: {.panel-tabset}
+## System Architecture
+![](images/Eco_Sentry_Cloud_Architecture.png)
+
+## Live Demo (GIF)
+![](images/Eco_Sentry_Cloud_Demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/Cloud-Hybrid-Eco-Sentry){.btn .btn-primary role="button"}
+
+---
+
+# 2. Carbon-Aware Agentic Scheduler
+<span class="tech-tag">AWS Lambda</span> <span class="tech-tag">LangGraph</span> <span class="tech-tag">Multi-Agent</span>
+
+A system that schedules AI training jobs based on the carbon intensity of the electricity grid.
+
+![](images/Carbon-Aware Scheduler System Architecture_diagram.png)
+
+[**View Code on GitHub**](https://github.com/Najo1on1/carbon-aware-scheduler){.btn .btn-primary role="button"}
+
+---
+
+# 3. Serverless AI Pipeline
+<span class="tech-tag">AWS Greengrass</span> <span class="tech-tag">IoT Core</span> <span class="tech-tag">PyTorch</span>
+
+Sub-100ms defect detection for manufacturing using AWS IoT Core.
+
+![](images/Serverless AI Pipeline for Quality Inspection description.png)
+
+[**View Code on GitHub**](https://github.com/Najo1on1/Serverless-AI-Pipeline-for-High-Throughput-Quality-Inspection-on-AWS){.btn .btn-primary role="button"}
+
+<br><br>
+
+::: {style="display: flex; justify-content: space-between;"}
+[&larr; **Previous: Edge AI**](01_edge.qmd){.btn .btn-outline-secondary .btn-lg role="button"}
+[**Next: Data & Research** &rarr;](03_data.qmd){.btn .btn-primary .btn-lg role="button"}
+:::

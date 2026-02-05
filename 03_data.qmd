@@ -1,0 +1,53 @@
+---
+title: "Data Engineering & Research"
+subtitle: "Pipelines, Uncertainty Quantification, and Rigorous Analysis."
+format:
+  html:
+    toc: true
+---
+
+# Certifications
+
+:::{.grid}
+:::{.g-col-6}
+![](images/Build a Data Warehouse with BigQuery Skill Badge.png){width=150}
+**BigQuery Data Warehouse**
+:::
+:::{.g-col-6}
+![](images/AWS Cloud Quest Machine Learning - Training Badge.png){width=150}
+**AWS Machine Learning**
+:::
+:::
+
+---
+
+# 1. EuroAgri Pipeline
+<span class="tech-tag">Neo4j</span> <span class="tech-tag">Pandas</span> <span class="tech-tag">ETL</span>
+
+Harmonizing heterogeneous geospatial inputs into climate-adaptive agronomic insights.
+
+* **Features:** Custom heuristic imputation engine for missing soil chemistry data.
+
+![](images/EuroAgri Pipeline schema_metagraph.png)
+
+[**View Code on GitHub**](https://github.com/Najo1on1/euroagri-pipeline){.btn .btn-success role="button"}
+
+---
+
+# 2. Net-Load Forecasting (Master's Dissertation)
+<span class="tech-tag">Bayesian LSTM</span> <span class="tech-tag">Uncertainty Quantification</span>
+
+* **Research:** Calibrated uncertainty quantification for the Irish Power System.
+* **Model:** Monte Carlo Dropout LSTM + Deep SVDD for anomaly detection.
+
+![](images/Irish Power Modular System Architecture.png)
+
+[**View Project on GitHub**](https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System){.btn .btn-primary role="button"}
+[**Download Dissertation (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
+
+<br><br>
+
+::: {style="display: flex; justify-content: space-between;"}
+[&larr; **Previous: Cloud Systems**](02_cloud.qmd){.btn .btn-outline-secondary .btn-lg role="button"}
+[**Return to Home**](index.qmd){.btn .btn-primary .btn-lg role="button"}
+:::

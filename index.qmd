@@ -1,145 +1,60 @@
 ---
-title: "Technical Competency Matrix"
+title: "Jonathan Muwanguzi"
+subtitle: "AI & Cloud Engineer | Hybrid Architectures"
 page-layout: full
-subtitle: "Cloud Architecture | Data Engineering | AI Research"
 ---
-
-:::{.column-page}
-# Executive Summary
-**AI & Cloud Engineer** specializing in **production-grade ML systems**. Competencies include **Serverless Architecture** (AWS/GCP), **Data Pipelines**, and **Calibrated Uncertainty Quantification**, validated by **5+ Industry Certifications**.
-:::
-
----
-
-## 1. Cloud & MLOps (AWS/GCP) {#cloud}
 
 :::{.grid}
 
-:::{.g-col-4}
-### Certifications
+:::{.g-col-12}
+# Technical Competency Matrix
 
-<div class="badge-entry">
-![](images/AWS Cloud Quest Solutions Architect - Training Badge.png)
-[**Solutions Architect**](https://www.credly.com/badges/7e7ce948-e01f-4093-b721-569e4a591cfa/public_url)
-</div>
+**I build systems that scale on the Cloud and run efficiently on the Edge.**
 
-<div class="badge-entry">
-![](images/AWS Cloud Quest Generative AI Architect - Training Badge.png)
-[**GenAI Architect**](https://www.credly.com/badges/9c6c38b6-ceb3-43ab-8aa4-60ee9b4bbc01/public_url)
-</div>
-
-<div class="badge-entry">
-![](images/AWS Academy Graduate - Cloud Foundations - Training Badge.png)
-[**Cloud Foundations**](https://www.credly.com/badges/1bed2ab6-dfb9-49f3-8801-f67b8c2f55ee/public_url)
-</div>
-
-<div class="badge-entry">
-![](images/Google Cloud Fundamentals Core Infrastructure.png)
-[**Google Core Infrastructure**](https://www.cloudskillsboost.google/public_profiles/YOUR_PROFILE_LINK_HERE)
-</div>
-
+Select a domain below to view relevant projects, codebases, and architectural diagrams.
 :::
-
-:::{.g-col-8 .project-card}
-
-### Serverless AI Pipeline (Edge-to-Cloud)
-
-<div class="project-text">
-Designed to achieve **sub-100ms defect detection** in manufacturing environments, this pipeline integrates **AWS Greengrass** and **IoT Core** for robust edge computing. By deploying PyTorch models directly to the edge, I eliminated cloud latency, ensuring real-time inference while maintaining a serverless Lambda backend for asynchronous data aggregation and analytics.
-</div>
-
-![](images/Serverless AI Pipeline for Quality Inspection description.png){group="projects" description="Serverless AI Pipeline Architecture"}
-
-<div class="project-action">
-[**View Code on GitHub**](https://github.com/Najo1on1/Serverless-AI-Pipeline-for-High-Throughput-Quality-Inspection-on-AWS){.btn .btn-primary role="button"}
-</div>
-
-
-### Carbon-Aware Agentic Scheduler
-
-<div class="project-text">
-A multi-agent system built with **LangGraph** that dynamically schedules AI training jobs based on real-time grid carbon intensity. By integrating "Watcher" and "Scheduler" agents, the system autonomously shifts heavy compute workloads to low-carbon time windows, achieving a demonstrated **13.4% reduction in CO2 emissions** during simulation.
-</div>
-
-![](images/Carbon-Aware Scheduler System Architecture_diagram.png){group="projects" description="Multi-Agent Scheduler Architecture"}
-
-<div class="project-action">
-[**View Code on GitHub**](https://github.com/Najo1on1/carbon-aware-scheduler){.btn .btn-primary role="button"}
-</div>
-
-:::
-
-:::
-
----
-
-## 2. Data Engineering (Pipelines) {#data}
-
-:::{.grid}
 
 :::{.g-col-4}
-### Certifications
-
-<div class="badge-entry">
-![](images/Build a Data Warehouse with BigQuery Skill Badge.png)
-[**BigQuery Data Warehouse**](https://www.credly.com/badges/77276a92-ba3a-4a75-83c4-dfebfd25be03/public_url)
+```{=html}
+<div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+  <div class="card-body">
+    <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Edge AI & Offline</h3>
+    <p class="card-text" style="color: #555;">Privacy-first agents running on local hardware (NVIDIA RTX/Jetson). Green-AI, Drones, and Cognitive Firewalls.</p>
+    <a href="01_edge.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Edge Projects &rarr;</a>
+  </div>
 </div>
 
-:::
-
-:::{.g-col-8 .project-card}
-
-### EuroAgri Pipeline
-
-<div class="project-text">
-I engineered this scalable data system to harmonize heterogeneous geospatial inputs into climate-adaptive agronomic insights. The pipeline features a custom **heuristic imputation engine** for missing soil chemistry data (Nitrogen/Phosphorus) and automates the transformation of raw weather logs into structured **Parquet datasets** and a traversable **Neo4j Knowledge Graph**.
-</div>
-
-![](images/EuroAgri Pipeline schema_metagraph.png){group="projects" description="EuroAgri Knowledge Graph Schema"}
-
-<div class="project-action">
-[**View Code on GitHub**](https://github.com/Najo1on1/euroagri-pipeline){.btn .btn-success role="button"}
-</div>
+```
 
 :::
-
-:::
-
----
-
-## 3. AI Research (Deep Learning) {#ai}
-
-:::{.grid}
 
 :::{.g-col-4}
-### Certifications
 
-<div class="badge-entry">
-![](images/AWS Cloud Quest Machine Learning - Training Badge.png)
-[**AWS Machine Learning**](https://www.credly.com/badges/30297a53-9f40-4fc8-ab47-17cd0c7723f8/public_url)
+```{=html}
+<div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+  <div class="card-body">
+    <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Cloud & Hybrid</h3>
+    <p class="card-text" style="color: #555;">Scalable architectures on AWS & GCP. Multi-agent schedulers, Serverless pipelines, and Industrial Vision.</p>
+    <a href="02_cloud.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Cloud Projects &rarr;</a>
+  </div>
 </div>
 
-<div class="badge-entry">
-![](images/Prompt Design in Vertex AI Skill Badge.png)
-[**Vertex AI Prompt Design**](https://www.credly.com/badges/71a30456-3491-4f6a-af98-38943291d195/public_url)
-</div>
+```
 
 :::
 
-:::{.g-col-8 .project-card}
+:::{.g-col-4}
 
-### Net-Load Forecasting with MC-Dropout
-
-<div class="project-text">
-My Master's dissertation focused on **calibrated uncertainty quantification** for the Irish Power System, moving beyond simple point predictions. I developed a **Monte Carlo Dropout LSTM** network to predict net-load volatility and implemented a **Deep SVDD** (Support Vector Data Description) model for residual-based anomaly detection, statistically outperforming ARIMA-GARCH baselines.
+```{=html}
+<div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+  <div class="card-body">
+    <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Data & Research</h3>
+    <p class="card-text" style="color: #555;">Rigorous ETL pipelines, Knowledge Graphs (Neo4j), and Deep Learning Research (Bayesian LSTM).</p>
+    <a href="03_data.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Research &rarr;</a>
+  </div>
 </div>
 
-![](images/Irish Power Modular System Architecture.png){group="projects" description="System Architecture: Bayesian LSTM & Anomaly Detection Pipeline"}
-
-<div class="project-action">
-[**View Project on GitHub**](https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System){.btn .btn-primary role="button"}
-[**Download Dissertation (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
-</div>
+```
 
 :::
 
