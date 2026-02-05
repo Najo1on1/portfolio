@@ -35,7 +35,7 @@ subtitle: "Cloud Architecture | Data Engineering | AI Research"
 
 <div class="badge-entry">
 ![](images/Google Cloud Fundamentals Core Infrastructure.png)
-[**Google Core Infra**](https://www.cloudskillsboost.google/public_profiles/YOUR_PROFILE_LINK_HERE)
+[**Google Core Infrastructure**](https://www.cloudskillsboost.google/public_profiles/YOUR_PROFILE_LINK_HERE)
 </div>
 
 :::

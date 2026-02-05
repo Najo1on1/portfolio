@@ -353,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="project-text">
 <p>Designed to achieve <strong>sub-100ms defect detection</strong> in manufacturing environments, this pipeline integrates <strong>AWS Greengrass</strong> and <strong>IoT Core</strong> for robust edge computing. By deploying PyTorch models directly to the edge, I eliminated cloud latency, ensuring real-time inference while maintaining a serverless Lambda backend for asynchronous data aggregation and analytics.</p>
 </div>
-<p><a href="images/Serverless AI Pipeline for Quality Inspection description.png" class="lightbox" data-glightbox="description: .lightbox-desc-1;" data-gallery="projects"><img src="images/Serverless AI Pipeline for Quality Inspection description.png" class="img-fluid"></a></p>
+<p><a href="images/Serverless AI Pipeline for Quality Inspection description.png" class="lightbox" data-gallery="projects" data-glightbox="description: .lightbox-desc-1;"><img src="images/Serverless AI Pipeline for Quality Inspection description.png" class="img-fluid"></a></p>
 <div class="project-action">
 <p><a href="https://github.com/Najo1on1/Serverless-AI-Pipeline-for-High-Throughput-Quality-Inspection-on-AWS" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
 </div>
@@ -363,7 +363,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="project-text">
 <p>A multi-agent system built with <strong>LangGraph</strong> that dynamically schedules AI training jobs based on real-time grid carbon intensity. By integrating “Watcher” and “Scheduler” agents, the system autonomously shifts heavy compute workloads to low-carbon time windows, achieving a demonstrated <strong>13.4% reduction in CO2 emissions</strong> during simulation.</p>
 </div>
-<p><a href="images/Carbon-Aware Scheduler System Architecture_diagram.png" class="lightbox" data-glightbox="description: .lightbox-desc-2;" data-gallery="projects"><img src="images/Carbon-Aware Scheduler System Architecture_diagram.png" class="img-fluid"></a></p>
+<p><a href="images/Carbon-Aware Scheduler System Architecture_diagram.png" class="lightbox" data-gallery="projects" data-glightbox="description: .lightbox-desc-2;"><img src="images/Carbon-Aware Scheduler System Architecture_diagram.png" class="img-fluid"></a></p>
 <div class="project-action">
 <p><a href="https://github.com/Najo1on1/carbon-aware-scheduler" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
 </div>
@@ -386,7 +386,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="project-text">
 <p>I engineered this scalable data system to harmonize heterogeneous geospatial inputs into climate-adaptive agronomic insights. The pipeline features a custom <strong>heuristic imputation engine</strong> for missing soil chemistry data (Nitrogen/Phosphorus) and automates the transformation of raw weather logs into structured <strong>Parquet datasets</strong> and a traversable <strong>Neo4j Knowledge Graph</strong>.</p>
 </div>
-<p><a href="images/EuroAgri Pipeline schema_metagraph.png" class="lightbox" data-glightbox="description: .lightbox-desc-3;" data-gallery="projects"><img src="images/EuroAgri Pipeline schema_metagraph.png" class="img-fluid"></a></p>
+<p><a href="images/EuroAgri Pipeline schema_metagraph.png" class="lightbox" data-gallery="projects" data-glightbox="description: .lightbox-desc-3;"><img src="images/EuroAgri Pipeline schema_metagraph.png" class="img-fluid"></a></p>
 <div class="project-action">
 <p><a href="https://github.com/Najo1on1/euroagri-pipeline" class="btn btn-success" role="button"><strong>View Code on GitHub</strong></a></p>
 </div>
@@ -411,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="project-text">
 <p>My Master’s dissertation focused on <strong>calibrated uncertainty quantification</strong> for the Irish Power System, moving beyond simple point predictions. I developed a <strong>Monte Carlo Dropout LSTM</strong> network to predict net-load volatility and implemented a <strong>Deep SVDD</strong> (Support Vector Data Description) model for residual-based anomaly detection, statistically outperforming ARIMA-GARCH baselines.</p>
 </div>
-<p><a href="images/Irish Power Modular System Architecture.png" class="lightbox" data-glightbox="description: .lightbox-desc-4;" data-gallery="projects"><img src="images/Irish Power Modular System Architecture.png" class="img-fluid"></a></p>
+<p><a href="images/Irish Power Modular System Architecture.png" class="lightbox" data-gallery="projects" data-glightbox="description: .lightbox-desc-4;"><img src="images/Irish Power Modular System Architecture.png" class="img-fluid"></a></p>
 <div class="project-action">
 <p><a href="https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System" class="btn btn-primary" role="button"><strong>View Project on GitHub</strong></a> <a href="files/Dissertation 21189676 Muwanguzi Jonathan.pdf" class="btn btn-info" role="button"><strong>Download Dissertation (PDF)</strong></a></p>
 </div>
@@ -522,7 +522,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Najo1on1\.github\.io\/portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
