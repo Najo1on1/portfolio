@@ -137,7 +137,8 @@ My Master's dissertation focused on **calibrated uncertainty quantification** fo
 ![](images/Irish Power Modular System Architecture.png){group="projects" description="System Architecture: Bayesian LSTM & Anomaly Detection Pipeline"}
 
 <div class="project-action">
-[**Download Dissertation Overview (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
+[**View Project on GitHub**](https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System){.btn .btn-primary role="button"}
+[**Download Dissertation (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
 </div>
 
 :::

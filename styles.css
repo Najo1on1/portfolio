@@ -85,7 +85,11 @@ body.quarto-dark .project-text {
 }
 
 /* Button Container */
+/* Button Container - Updated for Dual Buttons */
 .project-action {
   margin-top: 1rem;
-  margin-bottom: 3rem; /* Space before next project */
+  margin-bottom: 3rem;
+  display: flex;       /* Aligns buttons in a row */
+  gap: 1rem;           /* Adds space between the two buttons */
+  flex-wrap: wrap;     /* Ensures they stack nicely on mobile */
 }
