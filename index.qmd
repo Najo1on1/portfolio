@@ -134,6 +134,8 @@ I engineered this scalable data system to harmonize heterogeneous geospatial inp
 My Master's dissertation focused on **calibrated uncertainty quantification** for the Irish Power System, moving beyond simple point predictions. I developed a **Monte Carlo Dropout LSTM** network to predict net-load volatility and implemented a **Deep SVDD** (Support Vector Data Description) model for residual-based anomaly detection, statistically outperforming ARIMA-GARCH baselines.
 </div>
 
+![](images/Irish Power Modular System Architecture.png){group="projects" description="System Architecture: Bayesian LSTM & Anomaly Detection Pipeline"}
+
 <div class="project-action">
 [**Download Dissertation Overview (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
 </div>
