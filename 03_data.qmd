@@ -1,6 +1,6 @@
 ---
-title: "Data Engineering & Research"
-subtitle: "Pipelines, Uncertainty Quantification, and Rigorous Analysis."
+title: "Data Engineering & Cognitive BI"
+subtitle: "Pipelines, Federated Graph Intelligence, and Enterprise Analytics."
 format:
   html:
     toc: true
@@ -21,12 +21,52 @@ format:
 
 ---
 
-# 1. EuroAgri Pipeline
+# 1. Churn Investigator: Enterprise Risk Radar
+<span class="tech-tag">LangGraph</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">SQLite</span> <span class="tech-tag">Ollama</span>
+
+An industrial-grade analytics platform predicting customer churn through friction mapping.
+
+* **Hybrid RAG Architecture:** Orchestrates queries across SQLite (1M+ rows) and Neo4j (Graph Logic) to solve context blindness.
+* **Engineering:** Solves the hallucination problem by restricting the AI to describing observations while delegating decision-making to the database logic.
+
+::: {.panel-tabset}
+## Live Demo (GIF)
+![](images/churn_risk_radar_demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/Churn-Investigator){.btn .btn-primary role="button"}
+
+---
+
+# 2. The Operational Empathy Engine
+<span class="tech-tag">Neo4j</span> <span class="tech-tag">SQLite</span> <span class="tech-tag">Llama 3</span>
+
+Bridging the gap between On-Time Performance (Hard Data) and Passenger Sentiment (Soft Data).
+
+* **Workflow:** A "Service Twin" that performs a Federated Join between operational flight logs and unstructured passenger reviews.
+* **Tech:** Uses Llama 3 locally to extract sentiment and Neo4j to map relationships, identifying routes that are "Operationally Efficient" but "Experientially Failing."
+
+::: {.panel-tabset}
+## Live Demo (GIF)
+![](images/operational_empathy_engine_demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/operational-empathy-engine){.btn .btn-primary role="button"}
+
+---
+
+# Foundational Data & Academic Research
+
+## 3. EuroAgri Pipeline
 <span class="tech-tag">Neo4j</span> <span class="tech-tag">Pandas</span> <span class="tech-tag">ETL</span>
 
-Harmonizing heterogeneous geospatial inputs into climate-adaptive agronomic insights.
+An open-source data backbone for precision agriculture that processes high-resolution NetCDF climate data and NUTS2 administrative boundaries to generate granular crop-variety recommendations.
 
-* **Features:** Custom heuristic imputation engine for missing soil chemistry data.
+**Engineering Accomplishments:**
+
+* **Key Innovation:** Implemented a transparent Heuristic Imputation Engine (NPK v01) to estimate critical Nitrogen, Phosphorus, and Potassium levels from soil texture and organic matter, bypassing the lack of direct NPK data in global datasets.
+* **Architecture:** Transforms tabular "Source of Truth" Parquet files into a Neo4j Knowledge Graph, enabling complex semantic queries like identifying high-risk disease zones across NUTS2 regional boundaries.
+* **Resource Optimization:** Integrated the FAO-56 Penman-Monteith equation to calculate precise Net Irrigation Needs by comparing weekly soil water storage against effective rainfall.
 
 ![](images/EuroAgri Pipeline schema_metagraph.png)
 
@@ -34,11 +74,11 @@ Harmonizing heterogeneous geospatial inputs into climate-adaptive agronomic insi
 
 ---
 
-# 2. Net-Load Forecasting (Master's Dissertation)
+## 4. Net-Load Forecasting (Master’s Dissertation)
 <span class="tech-tag">Bayesian LSTM</span> <span class="tech-tag">Uncertainty Quantification</span>
 
-* **Research:** Calibrated uncertainty quantification for the Irish Power System.
-* **Model:** Monte Carlo Dropout LSTM + Deep SVDD for anomaly detection.
+* **Research:** Investigated the intersection of probabilistic deep learning and out-of-distribution detection to solve the "context blindness" of traditional energy forecasting during rapid Atlantic weather shifts.
+* **Model:** A modular stack using walk-forward cross-validation to compare DeepSVDD and One-Class SVM detectors against a Bayesian baseline, achieving reliability through strict temporal integrity and residual-based alerting.
 
 ![](images/Irish Power Modular System Architecture.png)
 

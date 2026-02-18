@@ -12,7 +12,7 @@ page-layout: full
 
 **I build AI systems that scale on the Cloud and execute on the Edge.**
 
-From **autonomous drones** (Edge AI) to **carbon-aware schedulers** (AWS), my work bridges the gap between massive cloud compute and constrained industrial hardware.
+From **autonomous drones** to **cognitive business intelligence**, my work aims to bridge the gap between massive cloud compute and constrained industrial hardware.
 :::
 
 :::{.g-col-12 .g-col-md-7}
@@ -21,26 +21,34 @@ From **autonomous drones** (Edge AI) to **carbon-aware schedulers** (AWS), my wo
   <div class="carousel-inner">
     
     <div class="carousel-item active">
+      <img src="images/civic_pulse_demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Smart City Ops">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="margin-bottom:0;">Civic Pulse Monitor</h5>
+        <small>Geospatial Graph Intelligence & Local Llama 3</small>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/churn_risk_radar_demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Churn Analytics">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="margin-bottom:0;">Churn Investigator</h5>
+        <small>Enterprise Risk Radar & Agentic RAG</small>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/operational_empathy_engine_demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Airline Analytics">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="margin-bottom:0;">The Operational Empathy Engine</h5>
+        <small>Federated Join: Flight Logs + Passenger Sentiment</small>
+      </div>
+    </div>
+
+    <div class="carousel-item">
       <img src="images/Aegis_Drone_Demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Drone Demo">
       <div class="carousel-caption d-none d-md-block">
         <h5 style="margin-bottom:0;">Aegis Overwatch</h5>
         <small>Autonomous Drone Vision (Edge AI)</small>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="images/Eco_Sentry_Edge_Demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Edge Security">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 style="margin-bottom:0;">Eco Sentry Edge</h5>
-        <small>Cognitive Firewall & Vector Anomaly Detection</small>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="images/Eco_Sentry_Cloud_Demo.gif" class="d-block w-100" style="object-fit: cover; height: 400px;" alt="Cloud Platform">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 style="margin-bottom:0;">Cloud Command</h5>
-        <small>Hybrid Gemini + Neo4j Architecture</small>
       </div>
     </div>
 
@@ -97,7 +105,7 @@ From **autonomous drones** (Edge AI) to **carbon-aware schedulers** (AWS), my wo
 <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
   <div class="card-body">
     <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Edge AI & Offline</h3>
-    <p class="card-text" style="color: #555;">Privacy-first agents running on local hardware (NVIDIA RTX/Jetson). Green-AI, Drones, and Cognitive Firewalls.</p>
+    <p class="card-text" style="color: #555;">Privacy-first agents for Smart City ops and drone safety running on local hardware (NVIDIA RTX/Jetson).</p>
     <a href="01_edge.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Edge Projects &rarr;</a>
   </div>
 </div>
@@ -112,7 +120,7 @@ From **autonomous drones** (Edge AI) to **carbon-aware schedulers** (AWS), my wo
 <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
   <div class="card-body">
     <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Cloud & Hybrid</h3>
-    <p class="card-text" style="color: #555;">Scalable architectures on AWS & GCP. Multi-agent schedulers, Serverless pipelines, and Industrial Vision.</p>
+    <p class="card-text" style="color: #555;">Scalable architectures on AWS & GCP. Multi-agent schedulers and Hybrid AI models (Google Gemini).</p>
     <a href="02_cloud.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Cloud Projects &rarr;</a>
   </div>
 </div>
@@ -126,9 +134,9 @@ From **autonomous drones** (Edge AI) to **carbon-aware schedulers** (AWS), my wo
 ```{=html}
 <div class="card h-100" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
   <div class="card-body">
-    <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Data & Research</h3>
-    <p class="card-text" style="color: #555;">Rigorous ETL pipelines, Knowledge Graphs (Neo4j), and Deep Learning Research (Bayesian LSTM).</p>
-    <a href="03_data.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Research &rarr;</a>
+    <h3 class="card-title" style="color: #0d6efd; margin-top: 0;">Data & Cognitive BI</h3>
+    <p class="card-text" style="color: #555;">Federated SQL+Graph pipelines, Agentic RAG for Enterprise Risk, and Deep Learning Research.</p>
+    <a href="03_data.html" class="btn btn-primary" style="text-decoration: none; font-weight: bold;">View Data Projects &rarr;</a>
   </div>
 </div>
 

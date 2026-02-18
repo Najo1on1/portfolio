@@ -47,7 +47,24 @@ A "Cognitive Firewall" running on the Edge Node.
 
 ---
 
-# 3. Aegis Overwatch (Efficiency Route)
+# 3. Civic Pulse Monitor (Smart City Ops)
+<span class="tech-tag">Ollama (Llama 3)</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">PyDeck</span>
+
+A privacy-first Smart City architecture running entirely offline.
+
+* **Problem:** Traditional systems treat civic reports as context-blind rows.
+* **Solution:** Federates structured logs with unstructured geospatial data, utilizing local Llama 3 inference and graph logic to autonomously identify high-priority hazards.
+
+::: {.panel-tabset}
+## Live Demo (GIF)
+![](images/civic_pulse_demo.gif)
+:::
+
+[**View Code on GitHub**](https://github.com/Najo1on1/civic_pulse_monitor){.btn .btn-primary role="button"}
+
+---
+
+# 4. Aegis Overwatch (Efficiency Route)
 <span class="tech-tag">Ollama (LLaVA)</span> <span class="tech-tag">OpenCV</span> <span class="tech-tag">Neo4j</span>
 
 A decentralized drone safety pipeline.

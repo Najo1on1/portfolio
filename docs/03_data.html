@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Engineering &amp; Research – JM</title>
+<title>Data Engineering &amp; Cognitive BI – JM</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -306,8 +306,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#certifications" id="toc-certifications" class="nav-link active" data-scroll-target="#certifications">Certifications</a></li>
-  <li><a href="#euroagri-pipeline" id="toc-euroagri-pipeline" class="nav-link" data-scroll-target="#euroagri-pipeline">1. EuroAgri Pipeline</a></li>
-  <li><a href="#net-load-forecasting-masters-dissertation" id="toc-net-load-forecasting-masters-dissertation" class="nav-link" data-scroll-target="#net-load-forecasting-masters-dissertation">2. Net-Load Forecasting (Master’s Dissertation)</a></li>
+  <li><a href="#churn-investigator-enterprise-risk-radar" id="toc-churn-investigator-enterprise-risk-radar" class="nav-link" data-scroll-target="#churn-investigator-enterprise-risk-radar">1. Churn Investigator: Enterprise Risk Radar</a></li>
+  <li><a href="#the-operational-empathy-engine" id="toc-the-operational-empathy-engine" class="nav-link" data-scroll-target="#the-operational-empathy-engine">2. The Operational Empathy Engine</a></li>
+  <li><a href="#foundational-data-academic-research" id="toc-foundational-data-academic-research" class="nav-link" data-scroll-target="#foundational-data-academic-research">Foundational Data &amp; Academic Research</a>
+  <ul class="collapse">
+  <li><a href="#euroagri-pipeline" id="toc-euroagri-pipeline" class="nav-link" data-scroll-target="#euroagri-pipeline">3. EuroAgri Pipeline</a></li>
+  <li><a href="#net-load-forecasting-masters-dissertation" id="toc-net-load-forecasting-masters-dissertation" class="nav-link" data-scroll-target="#net-load-forecasting-masters-dissertation">4. Net-Load Forecasting (Master’s Dissertation)</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -317,8 +322,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Engineering &amp; Research</h1>
-<p class="subtitle lead">Pipelines, Uncertainty Quantification, and Rigorous Analysis.</p>
+<h1 class="title">Data Engineering &amp; Cognitive BI</h1>
+<p class="subtitle lead">Pipelines, Federated Graph Intelligence, and Enterprise Analytics.</p>
 </div>
 
 
@@ -347,25 +352,68 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <hr>
 </section>
-<section id="euroagri-pipeline" class="level1">
-<h1>1. EuroAgri Pipeline</h1>
-<p><span class="tech-tag">Neo4j</span> <span class="tech-tag">Pandas</span> <span class="tech-tag">ETL</span></p>
-<p>Harmonizing heterogeneous geospatial inputs into climate-adaptive agronomic insights.</p>
+<section id="churn-investigator-enterprise-risk-radar" class="level1">
+<h1>1. Churn Investigator: Enterprise Risk Radar</h1>
+<p><span class="tech-tag">LangGraph</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">SQLite</span> <span class="tech-tag">Ollama</span></p>
+<p>An industrial-grade analytics platform predicting customer churn through friction mapping.</p>
 <ul>
-<li><strong>Features:</strong> Custom heuristic imputation engine for missing soil chemistry data.</li>
+<li><strong>Hybrid RAG Architecture:</strong> Orchestrates queries across SQLite (1M+ rows) and Neo4j (Graph Logic) to solve context blindness.</li>
+<li><strong>Engineering:</strong> Solves the hallucination problem by restricting the AI to describing observations while delegating decision-making to the database logic.</li>
 </ul>
-<p><a href="images/EuroAgri Pipeline schema_metagraph.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/EuroAgri Pipeline schema_metagraph.png" class="img-fluid"></a></p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Live Demo (GIF)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><a href="images/churn_risk_radar_demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/churn_risk_radar_demo.gif" class="img-fluid"></a></p>
+</div>
+</div>
+</div>
+<p><a href="https://github.com/Najo1on1/Churn-Investigator" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
+<hr>
+</section>
+<section id="the-operational-empathy-engine" class="level1">
+<h1>2. The Operational Empathy Engine</h1>
+<p><span class="tech-tag">Neo4j</span> <span class="tech-tag">SQLite</span> <span class="tech-tag">Llama 3</span></p>
+<p>Bridging the gap between On-Time Performance (Hard Data) and Passenger Sentiment (Soft Data).</p>
+<ul>
+<li><strong>Workflow:</strong> A “Service Twin” that performs a Federated Join between operational flight logs and unstructured passenger reviews.</li>
+<li><strong>Tech:</strong> Uses Llama 3 locally to extract sentiment and Neo4j to map relationships, identifying routes that are “Operationally Efficient” but “Experientially Failing.”</li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Live Demo (GIF)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><a href="images/operational_empathy_engine_demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/operational_empathy_engine_demo.gif" class="img-fluid"></a></p>
+</div>
+</div>
+</div>
+<p><a href="https://github.com/Najo1on1/operational-empathy-engine" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
+<hr>
+</section>
+<section id="foundational-data-academic-research" class="level1">
+<h1>Foundational Data &amp; Academic Research</h1>
+<section id="euroagri-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="euroagri-pipeline">3. EuroAgri Pipeline</h2>
+<p><span class="tech-tag">Neo4j</span> <span class="tech-tag">Pandas</span> <span class="tech-tag">ETL</span></p>
+<p>An open-source data backbone for precision agriculture that processes high-resolution NetCDF climate data and NUTS2 administrative boundaries to generate granular crop-variety recommendations.</p>
+<p><strong>Engineering Accomplishments:</strong></p>
+<ul>
+<li><strong>Key Innovation:</strong> Implemented a transparent Heuristic Imputation Engine (NPK v01) to estimate critical Nitrogen, Phosphorus, and Potassium levels from soil texture and organic matter, bypassing the lack of direct NPK data in global datasets.</li>
+<li><strong>Architecture:</strong> Transforms tabular “Source of Truth” Parquet files into a Neo4j Knowledge Graph, enabling complex semantic queries like identifying high-risk disease zones across NUTS2 regional boundaries.</li>
+<li><strong>Resource Optimization:</strong> Integrated the FAO-56 Penman-Monteith equation to calculate precise Net Irrigation Needs by comparing weekly soil water storage against effective rainfall.</li>
+</ul>
+<p><a href="images/EuroAgri Pipeline schema_metagraph.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/EuroAgri Pipeline schema_metagraph.png" class="img-fluid"></a></p>
 <p><a href="https://github.com/Najo1on1/euroagri-pipeline" class="btn btn-success" role="button"><strong>View Code on GitHub</strong></a></p>
 <hr>
 </section>
-<section id="net-load-forecasting-masters-dissertation" class="level1">
-<h1>2. Net-Load Forecasting (Master’s Dissertation)</h1>
+<section id="net-load-forecasting-masters-dissertation" class="level2">
+<h2 class="anchored" data-anchor-id="net-load-forecasting-masters-dissertation">4. Net-Load Forecasting (Master’s Dissertation)</h2>
 <p><span class="tech-tag">Bayesian LSTM</span> <span class="tech-tag">Uncertainty Quantification</span></p>
 <ul>
-<li><strong>Research:</strong> Calibrated uncertainty quantification for the Irish Power System.</li>
-<li><strong>Model:</strong> Monte Carlo Dropout LSTM + Deep SVDD for anomaly detection.</li>
+<li><strong>Research:</strong> Investigated the intersection of probabilistic deep learning and out-of-distribution detection to solve the “context blindness” of traditional energy forecasting during rapid Atlantic weather shifts.</li>
+<li><strong>Model:</strong> A modular stack using walk-forward cross-validation to compare DeepSVDD and One-Class SVM detectors against a Bayesian baseline, achieving reliability through strict temporal integrity and residual-based alerting.</li>
 </ul>
-<p><a href="images/Irish Power Modular System Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Irish Power Modular System Architecture.png" class="img-fluid"></a></p>
+<p><a href="images/Irish Power Modular System Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Irish Power Modular System Architecture.png" class="img-fluid"></a></p>
 <p><a href="https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System" class="btn btn-primary" role="button"><strong>View Project on GitHub</strong></a> <a href="files/Dissertation 21189676 Muwanguzi Jonathan.pdf" class="btn btn-info" role="button"><strong>Download Dissertation (PDF)</strong></a></p>
 <p><br><br></p>
 <div style="display: flex; justify-content: space-between;">
@@ -373,6 +421,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -462,7 +511,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Najo1on1\.github\.io\/portfolio\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

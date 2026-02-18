@@ -343,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png" class="img-fluid" width="150"> <strong>AWS Solutions Architect</strong></p>
 </div>
 <div class="g-col-6">
-<p><img src="images/Google Cloud Fundamentals Core Infrastructure.png" class="img-fluid" width="150"> <strong>Google Core Infra</strong></p>
+<p><img src="images/Google Cloud Fundamentals Core Infrastructure.png" class="img-fluid" width="150"> <strong>Google Core Infrastructure</strong></p>
 </div>
 </div>
 <hr>
@@ -479,7 +479,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Najo1on1\.github\.io\/portfolio\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
