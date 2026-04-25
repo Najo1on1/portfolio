@@ -3,17 +3,20 @@ project:
   output-dir: docs
 
 website:
-  title: "JM"
+  title: "Jonathan Muwanguzi"
   navbar:
+    background: "#0B0F19"
     left:
       - href: index.qmd
         text: Home
       - href: 01_edge.qmd
-        text: Edge AI
+        text: Edge & Offline
       - href: 02_cloud.qmd
-        text: Cloud
+        text: Cloud & Hybrid
       - href: 03_data.qmd
-        text: Data
+        text: Data & Research
+      - href: 04_methodology.qmd
+        text: Methodology
     right:
       - icon: github
         href: https://github.com/Najo1on1
@@ -25,10 +28,15 @@ website:
 
 format:
   html:
-    theme:
-      light: cosmo
-      dark: superhero
+    theme: darkly # Forces the dark baseline for the Command Center aesthetic
     css: styles.css
     toc: true
     smooth-scroll: true
     lightbox: auto
+    mainfont: 'Inter, sans-serif'
+    monofont: 'JetBrains Mono, monospace'
+    include-in-header: 
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">

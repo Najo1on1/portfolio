@@ -1,122 +1,151 @@
-/* styles.css */
+/* =========================================
+   1. CORE VARIABLES (Cyber-Physical Grid)
+   ========================================= */
+:root {
+  --bg-base: #0B0F19;         /* Deep midnight navy canvas */
+  --bg-surface: #131C2D;      /* Elevated navy for cards/terminals */
+  --bg-terminal: #0a0e17;     /* Slightly darker for SRE logs */
+  
+  --text-primary: #E4E6EB;    /* Off-white for readability */
+  --text-muted: #94A3B8;      /* Slate for secondary text */
+  
+  --accent-cyan: #00E5FF;     /* Electric cyan for main actions/bridges */
+  --accent-violet: #8B5CF6;   /* Violet for Semantic LLM tags */
+  
+  --friction-red: #EF4444;    /* Critical Root Cause */
+  --friction-amber: #F59E0B;  /* Bottleneck Warning */
+  
+  --border-subtle: #2D3748;   /* 1px solid structural borders */
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
 
-/* GLOBAL LAYOUT */
+/* =========================================
+   2. GLOBAL RESET & TYPOGRAPHY
+   ========================================= */
+body {
+  background-color: var(--bg-base) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--accent-cyan); /* Updated from primary blue */
+}
+
+/* Force terminal, code, and specific UI elements to Mono */
+.sre-terminal, .tech-tag, .pipeline-tag, code {
+  font-family: var(--font-mono) !important;
+}
+
+/* =========================================
+   3. ARCHITECTURAL UI TEXTURES
+   ========================================= */
+/* Override default shadow-based cards with brutalist 1px borders */
+.card, .panel-tabset {
+  background-color: var(--bg-surface) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 4px;
+  box-shadow: none !important;
+}
+
+/* Buttons: Sharp, neon-glow on hover */
+.btn-primary, .btn-outline-secondary, .btn-success, .btn-info {
+  background-color: transparent !important;
+  border: 1px solid var(--accent-cyan) !important;
+  color: var(--accent-cyan) !important;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover, .btn-outline-secondary:hover, .btn-success:hover, .btn-info:hover {
+  background-color: rgba(0, 229, 255, 0.1) !important;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
+  color: #fff !important;
+}
+
+/* =========================================
+   4. BASELINE SRE TERMINAL & HUD ELEMENTS
+   ========================================= */
+.sre-terminal {
+  background-color: var(--bg-terminal);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent-cyan);
+  padding: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.glow-text {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
+}
+
+/* =========================================
+   5. LAYOUT & PROJECT STYLING (Merged)
+   ========================================= */
 .grid {
-  gap: 4rem; /* More space between the Sidebar and Main Content */
+  gap: 4rem; 
   margin-bottom: 4rem;
 }
 
-/* Sidebar (Certifications) styling */
 .g-col-4 {
-  border-right: 1px solid #eee;
+  border-right: 1px solid var(--border-subtle);
   padding-right: 2rem;
-}
-
-/* Dark mode divider */
-body.quarto-dark .g-col-4 {
-  border-right: 1px solid #444;
-}
-
-/* BADGES: Side-by-Side Layout */
-.badge-entry {
-  display: flex;
-  align-items: center;
-  gap: 1rem; /* Space between Icon and Text */
-  margin-bottom: 1.5rem; /* Space between rows */
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background-color 0.2s;
-}
-
-.badge-entry:hover {
-  background-color: rgba(0,0,0,0.03); /* Subtle highlight on hover */
-}
-
-/* Badge Icons */
-.badge-entry img {
-  width: 60px;  /* Icon size */
-  height: auto;
-  border-radius: 4px;
-}
-
-/* Badge Text Links */
-.badge-entry a {
-  font-weight: 600;
-  text-decoration: none;
-  color: #333;
-  font-size: 1.05rem;
-}
-
-body.quarto-dark .badge-entry a {
-  color: #eee;
-}
-
-/* PROJECTS: Narrative Styling */
-h3 {
-  margin-top: 0;
-  color: #0d6efd; /* Accent color for titles */
 }
 
 .project-text {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #444;
+  color: var(--text-muted);
   margin-bottom: 1.5rem;
-}
-
-body.quarto-dark .project-text {
-  color: #ccc;
 }
 
 /* Project Images */
-.project-card img {
+.project-card img, img {
   width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px; /* Sharper corners */
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   cursor: zoom-in;
   transition: transform 0.2s;
 }
 
-.project-card img:hover {
+.project-card img:hover, img:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.4);
 }
 
 /* Button Container */
-/* Button Container - Updated for Dual Buttons */
 .project-action {
   margin-top: 1rem;
   margin-bottom: 3rem;
-  display: flex;       /* Aligns buttons in a row */
-  gap: 1rem;           /* Adds space between the two buttons */
-  flex-wrap: wrap;     /* Ensures they stack nicely on mobile */
+  display: flex;       
+  gap: 1rem;           
+  flex-wrap: wrap;     
 }
 
-/* TECH PILLS: Small tags for skills */
+/* TECH PILLS: Updated to Cyber-Physical colors */
 .tech-tag {
   display: inline-block;
-  background-color: #f0f2f5;
-  color: #444;
+  background-color: rgba(139, 92, 246, 0.1); /* Faint violet background */
+  color: var(--accent-violet);
   padding: 0.2rem 0.6rem;
-  border-radius: 12px;
+  border-radius: 2px; /* Brutalist sharp edges */
   font-size: 0.85rem;
-  font-weight: 500;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-  border: 1px solid #ddd;
-}
-
-body.quarto-dark .tech-tag {
-  background-color: #2d2d2d;
-  color: #ccc;
-  border: 1px solid #444;
-}
-
-/* Add spacing between Project Title and Tags */
-h3 {
-  margin-bottom: 0.5rem;
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 /* --- INFINITE BADGE TICKER --- */
@@ -124,8 +153,7 @@ h3 {
   overflow: hidden;
   white-space: nowrap;
   padding: 30px 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), rgba(0,0,0,0.05), rgba(255,255,255,0)); /* Subtle fade edges */
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); /* Soft Fade Out */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); 
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
@@ -136,32 +164,33 @@ h3 {
 
 .marquee-content img {
   height: 90px;
+  width: auto;
   margin: 0 35px;
-  filter: grayscale(100%); /* Start gray for sleek look */
-  opacity: 0.7;
+  border: none; /* remove default image border for badges */
+  filter: grayscale(100%); 
+  opacity: 0.6;
   transition: all 0.4s ease;
 }
 
 .marquee-content img:hover {
-  filter: grayscale(0%); /* Color on hover */
+  filter: grayscale(0%); 
   opacity: 1;
-  transform: scale(1.2); /* Pop up */
-  cursor: pointer;
+  transform: scale(1.1); 
 }
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Move halfway because we duplicated the content */
+  100% { transform: translateX(-50%); } 
 }
 
 /* --- CAROUSEL POLISH --- */
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.7); /* Dark background for text readability */
-  border-radius: 10px;
+  background: rgba(11, 15, 25, 0.85); /* Matched to dark theme */
+  border: 1px solid var(--accent-cyan);
+  border-radius: 4px;
   padding: 10px 20px;
   bottom: 20px;
 }
 .carousel-item img {
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border-radius: 4px;
 }

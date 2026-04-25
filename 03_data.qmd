@@ -1,93 +1,255 @@
 ---
 title: "Data Engineering & Cognitive BI"
 subtitle: "Pipelines, Federated Graph Intelligence, and Enterprise Analytics."
+grid:
+  body-width: 1200px
 format:
   html:
     toc: true
+    toc-location: left
+    toc-depth: 2
+    toc-title: "On this page"
 ---
 
-# Certifications
+<br>
 
-:::{.grid}
-:::{.g-col-6}
-![](images/Build a Data Warehouse with BigQuery Skill Badge.png){width=150}
-**BigQuery Data Warehouse**
-:::
-:::{.g-col-6}
-![](images/AWS Cloud Quest Machine Learning - Training Badge.png){width=150}
-**AWS Machine Learning**
-:::
-:::
+## 1. Lex-Ghost Architect: Enterprise Resilience
 
----
+::::: {.grid}
 
-# 1. Churn Investigator: Enterprise Risk Radar
-<span class="tech-tag">LangGraph</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">SQLite</span> <span class="tech-tag">Ollama</span>
+:::: {.g-col-12 .g-col-lg-8}
 
-An industrial-grade analytics platform predicting customer churn through friction mapping.
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">Simulating Infrastructure Threats with Generative AI and Agentic RAG</p>
 
-* **Hybrid RAG Architecture:** Orchestrates queries across SQLite (1M+ rows) and Neo4j (Graph Logic) to solve context blindness.
-* **Engineering:** Solves the hallucination problem by restricting the AI to describing observations while delegating decision-making to the database logic.
+An end-to-end enterprise resilience platform. This system simulates physical infrastructure damage and orchestrates recovery strategies, empowering decision-makers through an air-gapped "War Room" interface.
+
+**Architectural Pipeline:**
+
+1. **Disaster Data Lake (ETL).** Prioritizes the "EU Data Bridge" to ingest, clean, and mathematically verify "Ground Truth" disaster telemetry.
+2. **Threat & Resilience Engines.** Employs Generative Adversarial Networks (GANs) to simulate structural damage, while a PPO Reinforcement Learning agent maps optimal recovery paths.
+3. **Resilience Command Center.** An Agentic RAG interface embedded within a Streamlit dashboard allows operators to query and control threat simulations in real-time.
 
 ::: {.panel-tabset}
-## Live Demo (GIF)
+### System Architect
+![](images/Sequence Diagram.png)
+:::
+
+```{=html}
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Lex-Ghost" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+```
+
+::::
+
+:::: {.g-col-12 .g-col-lg-4}
+
+```{=html}
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Simulation:</strong> GANs + PPO (RL)</p>
+    <p><strong>Interface:</strong> Agentic RAG / Streamlit</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-red);">FRICTION_LOG: Ground Truth Verification</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> Raw disaster feeds contained high noise-to-signal ratios, causing the Generative Threat Engine to hallucinate non-physical damage states.<br>
+    <strong>Resolution:</strong> Engineered the EU Data Bridge as a strict ETL gatekeeper, verifying "Ground Truth" telemetry against deterministic geographic bounds before allowing it into the Data Lake.</p>
+  </div>
+</div>
+```
+
+::::
+
+:::::
+
+```{=html}
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
+```
+
+
+## 2. Churn Investigator: Enterprise Risk Radar
+
+::::: {.grid}
+
+:::: {.g-col-12 .g-col-lg-8}
+
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">Industrial-grade analytics predicting customer churn through friction mapping</p>
+
+A Hybrid Retrieval-Augmented Generation (RAG) architecture that solves the context blindness inherent in standard analytics. By orchestrating queries across millions of rows and a graph database, it pinpoints systemic enterprise risk before it results in customer churn.
+
+**Architectural Pipeline:**
+
+1. **Data Ingestion.** Ingests 1M+ rows of structured customer interaction data into a localized SQLite repository.
+2. **Semantic Extraction.** Local Ollama instances process unstructured text logs to extract specific friction events and customer pain points.
+3. **Graph Resolution.** Neo4j maps relationships between friction events, predicting systemic churn risk through interconnected nodes.
+
+::: {.panel-tabset}
+### Live Demo
 ![](images/churn_risk_radar_demo.gif)
 :::
 
-[**View Code on GitHub**](https://github.com/Najo1on1/Churn-Investigator){.btn .btn-primary role="button"}
+```{=html}
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Churn-Investigator" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+```
 
----
+::::
 
-# 2. The Operational Empathy Engine
-<span class="tech-tag">Neo4j</span> <span class="tech-tag">SQLite</span> <span class="tech-tag">Llama 3</span>
+:::: {.g-col-12 .g-col-lg-4}
 
-Bridging the gap between On-Time Performance (Hard Data) and Passenger Sentiment (Soft Data).
+```{=html}
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Orchestration:</strong> LangGraph</p>
+    <p><strong>Storage:</strong> SQLite + Neo4j</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
 
-* **Workflow:** A "Service Twin" that performs a Federated Join between operational flight logs and unstructured passenger reviews.
-* **Tech:** Uses Llama 3 locally to extract sentiment and Neo4j to map relationships, identifying routes that are "Operationally Efficient" but "Experientially Failing."
+    <p class="glow-text mb-2" style="font-weight: 700;">METHODOLOGY_BRIDGE</p>
+    <span class="tech-tag" style="background: rgba(139, 92, 246, 0.1); color: var(--accent-violet); border: 1px solid rgba(139, 92, 246, 0.3);">Semantic: Ollama (Observation)</span><br>
+    <span style="color: var(--text-muted); margin-left: 1rem;">↓ Strictly Anchored By ↓</span><br>
+    <span class="tech-tag mt-1" style="background: rgba(0, 229, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 229, 255, 0.3);">Symbolic: Neo4j (Decision)</span>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">FRICTION_LOG: AI Hallucination</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> LLMs tasked with predicting churn hallucinated false correlations on large datasets.<br>
+    <strong>Resolution:</strong> Stripped the LLM of decision-making power. The AI is restricted entirely to translating unstructured text into nodes; the deterministic Neo4j graph executes the final mathematical risk logic.</p>
+  </div>
+</div>
+```
 
-::: {.panel-tabset}
-## Live Demo (GIF)
-![](images/operational_empathy_engine_demo.gif)
-:::
+::::
 
-[**View Code on GitHub**](https://github.com/Najo1on1/operational-empathy-engine){.btn .btn-primary role="button"}
+:::::
 
----
+```{=html}
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
+```
 
-# Foundational Data & Academic Research
 
 ## 3. EuroAgri Pipeline
-<span class="tech-tag">Neo4j</span> <span class="tech-tag">Pandas</span> <span class="tech-tag">ETL</span>
 
-An open-source data backbone for precision agriculture that processes high-resolution NetCDF climate data and NUTS2 administrative boundaries to generate granular crop-variety recommendations.
+::::: {.grid}
 
-**Engineering Accomplishments:**
+:::: {.g-col-12 .g-col-lg-8}
 
-* **Key Innovation:** Implemented a transparent Heuristic Imputation Engine (NPK v01) to estimate critical Nitrogen, Phosphorus, and Potassium levels from soil texture and organic matter, bypassing the lack of direct NPK data in global datasets.
-* **Architecture:** Transforms tabular "Source of Truth" Parquet files into a Neo4j Knowledge Graph, enabling complex semantic queries like identifying high-risk disease zones across NUTS2 regional boundaries.
-* **Resource Optimization:** Integrated the FAO-56 Penman-Monteith equation to calculate precise Net Irrigation Needs by comparing weekly soil water storage against effective rainfall.
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">Semantic Knowledge Graphs for Precision Agriculture</p>
 
+An open-source data backbone processing high-resolution NetCDF climate data and NUTS2 administrative boundaries to generate granular crop-variety recommendations and disease risk models.
+
+**Architectural Pipeline:**
+
+1. **Climate Ingestion.** Extracts and normalizes massive, high-resolution NetCDF spatial files.
+2. **Heuristic Imputation.** Calculates missing elemental ground-truth data (NPK) dynamically based on soil texture and organic matter distributions.
+3. **Graph Transformation.** Converts tabular Parquet "Source of Truth" files into a semantic Neo4j Knowledge Graph across NUTS2 boundaries.
+
+::: {.panel-tabset}
+### Metagraph Schema
 ![](images/EuroAgri Pipeline schema_metagraph.png)
+:::
 
-[**View Code on GitHub**](https://github.com/Najo1on1/euroagri-pipeline){.btn .btn-success role="button"}
+```{=html}
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/euroagri-pipeline" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+```
 
----
+::::
 
-## 4. Net-Load Forecasting (Master’s Dissertation)
-<span class="tech-tag">Bayesian LSTM</span> <span class="tech-tag">Uncertainty Quantification</span>
+:::: {.g-col-12 .g-col-lg-4}
 
-* **Research:** Investigated the intersection of probabilistic deep learning and out-of-distribution detection to solve the "context blindness" of traditional energy forecasting during rapid Atlantic weather shifts.
-* **Model:** A modular stack using walk-forward cross-validation to compare DeepSVDD and One-Class SVM detectors against a Bayesian baseline, achieving reliability through strict temporal integrity and residual-based alerting.
+```{=html}
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Processing:</strong> Pandas / NetCDF</p>
+    <p><strong>Physics Anchor:</strong> FAO-56 Penman-Monteith</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-red);">FRICTION_LOG: Missing Data</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> Global datasets severely lacked direct Nitrogen, Phosphorus, and Potassium (NPK) field data.<br>
+    <strong>Resolution:</strong> Engineered a transparent Heuristic Imputation Engine (NPK v01) to estimate critical elemental levels from surrounding soil physics, unlocking the ability to generate granular crop recommendations.</p>
+  </div>
+</div>
+```
 
+::::
+
+:::::
+
+```{=html}
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
+```
+
+
+## 4. Net-Load Forecasting (Master's Dissertation)
+
+::::: {.grid}
+
+:::: {.g-col-12 .g-col-lg-8}
+
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">Calibrated Uncertainty & Residual-Based Anomaly Detection for the Irish Power System</p>
+
+Investigated the intersection of probabilistic deep learning and out-of-distribution detection to solve the "context blindness" of traditional energy forecasting during rapid Atlantic weather shifts. Processed 10 years of SCADA operational logs and minute-level Met Éireann meteorological feeds.
+
+**Architectural Pipeline:**
+
+1. **Index Regularization.** Built a strict 15-minute chronological spine, deterministically resolving duplicate timestamps and daylight-saving time (DST) shifts.
+2. **Probabilistic Forecasting.** Replaced classical ARIMA-GARCH models with an MC-Dropout LSTM, producing both point-forecasts and calibrated 80%/95% uncertainty bands.
+3. **Residual Detection.** Utilized DeepSVDD and One-Class SVMs to flag structural grid anomalies based on the model's forecast *residuals*, rather than the raw net-load.
+
+::: {.panel-tabset}
+### System Architecture
 ![](images/Irish Power Modular System Architecture.png)
+:::
 
-[**View Project on GitHub**](https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System){.btn .btn-primary role="button"}
-[**Download Dissertation (PDF)**](files/Dissertation 21189676 Muwanguzi Jonathan.pdf){.btn .btn-info role="button"}
+```{=html}
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Useful-AI-in-Irish-Power-System" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+  <a href="files/Dissertation 21189676 Muwanguzi Jonathan.pdf" target="_blank" class="btn btn-info btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[DOWNLOAD_DISSERTATION]</a>
+</div>
+```
+
+::::
+
+:::: {.g-col-12 .g-col-lg-4}
+
+```{=html}
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Forecasting:</strong> MC-Dropout LSTM</p>
+    <p><strong>Anomaly Detection:</strong> DeepSVDD / OC-SVM</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">FRICTION_LOG: Feature Overfitting</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> Initial recurrent models trained on 187 exogenous features generalized poorly, achieving test RMSEs >1 GW.<br>
+    <strong>Resolution:</strong> Constructed a three-way wrapper/filter pipeline (Mutual Information + XGBoost + RFE) to compress the space to a 15-feature compact core, dropping RMSE to ~248 MW.</p>
+
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-red);">INFRASTRUCTURE_LOG: Temporal Leakage</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Constraint:</strong> Standard K-Fold Cross-Validation leaks future data and smears rare grid events.<br>
+    <strong>Resolution:</strong> Engineered a custom, rolling-origin Anomaly-Safe Splitter to enforce temporal integrity and guarantee minimum rare-event densities per validation block.</p>
+  </div>
+</div>
+```
+
+::::
+
+:::::
 
 <br><br>
 
-::: {style="display: flex; justify-content: space-between;"}
-[&larr; **Previous: Cloud Systems**](02_cloud.qmd){.btn .btn-outline-secondary .btn-lg role="button"}
-[**Return to Home**](index.qmd){.btn .btn-primary .btn-lg role="button"}
-:::
+```{=html}
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; margin-bottom: 2rem;">
+  <a href="02_cloud.html" class="btn btn-outline-secondary" style="font-weight: 700; padding: 0.75rem 1.5rem; font-family: var(--font-mono); border-color: var(--border-subtle) !important; color: var(--text-muted) !important;">&larr; BACK TO CLOUD SYSTEMS</a>
+  <a href="index.html" class="btn btn-primary" style="font-weight: 700; padding: 0.75rem 1.5rem; font-family: var(--font-mono);">RETURN TO HOME &rarr;</a>
+</div>

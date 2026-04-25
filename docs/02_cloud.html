@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cloud-Native &amp; Hybrid Systems – JM</title>
+<title>Cloud-Native &amp; Hybrid Systems – Jonathan Muwanguzi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b3c0c3e62de078130f8a0482bc93c796.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e9cf4e5a4f009a0df8a71ec0cb26ac22.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b3c0c3e62de078130f8a0482bc93c796.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4d4f7ac2dd9178e02a0d3f620f0dfc7f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -76,174 +72,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -251,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">JM</span>
+    <span class="navbar-title">Jonathan Muwanguzi</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -266,15 +103,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./01_edge.html"> 
-<span class="menu-text">Edge AI</span></a>
+<span class="menu-text">Edge &amp; Offline</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./02_cloud.html" aria-current="page"> 
-<span class="menu-text">Cloud</span></a>
+<span class="menu-text">Cloud &amp; Hybrid</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./03_data.html"> 
-<span class="menu-text">Data</span></a>
+<span class="menu-text">Data &amp; Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./04_methodology.html"> 
+<span class="menu-text">Methodology</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -291,7 +132,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -299,22 +139,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#certifications" id="toc-certifications" class="nav-link active" data-scroll-target="#certifications">Certifications</a></li>
-  <li><a href="#eco-sentry-cloud-hybrid-route" id="toc-eco-sentry-cloud-hybrid-route" class="nav-link" data-scroll-target="#eco-sentry-cloud-hybrid-route">1. Eco Sentry: Cloud Hybrid Route</a></li>
+  <ul class="collapse">
+  <li><a href="#eco-sentry-cloud-hybrid-route" id="toc-eco-sentry-cloud-hybrid-route" class="nav-link active" data-scroll-target="#eco-sentry-cloud-hybrid-route">1. Eco Sentry: Cloud Hybrid Route</a></li>
   <li><a href="#carbon-aware-agentic-scheduler" id="toc-carbon-aware-agentic-scheduler" class="nav-link" data-scroll-target="#carbon-aware-agentic-scheduler">2. Carbon-Aware Agentic Scheduler</a></li>
   <li><a href="#serverless-ai-pipeline" id="toc-serverless-ai-pipeline" class="nav-link" data-scroll-target="#serverless-ai-pipeline">3. Serverless AI Pipeline</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -336,28 +177,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="certifications" class="level1">
-<h1>Certifications</h1>
+<p><br></p>
+<section id="eco-sentry-cloud-hybrid-route" class="level2">
+<h2 class="anchored" data-anchor-id="eco-sentry-cloud-hybrid-route">1. Eco Sentry: Cloud Hybrid Route</h2>
 <div class="grid">
-<div class="g-col-6">
-<p><img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png" class="img-fluid" width="150"> <strong>AWS Solutions Architect</strong></p>
-</div>
-<div class="g-col-6">
-<p><img src="images/Google Cloud Fundamentals Core Infrastructure.png" class="img-fluid" width="150"> <strong>Google Core Infrastructure</strong></p>
-</div>
-</div>
-<hr>
-</section>
-<section id="eco-sentry-cloud-hybrid-route" class="level1">
-<h1>1. Eco Sentry: Cloud Hybrid Route</h1>
-<p><span class="tech-tag">Google Gemini API</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">Streamlit Async</span></p>
-<p>The “Satellite Command” unit.</p>
-<ul>
-<li><strong>Hybrid Logic:</strong> Uses Google Gemini (Infinite Context) for vision but restricts decisions using a deterministic Neo4j Graph.</li>
-<li><strong>Engineering:</strong> Implements an asynchronous “Pulse” architecture to handle API rate limits without freezing the video feed.</li>
-</ul>
+<div class="g-col-12 g-col-lg-8">
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+The “Satellite Command” unit bridging Infinite Context with Deterministic Logic
+</p>
+<p>Traditional vision systems suffer from context blindness, while Generative AI is prone to catastrophic hallucination when making industrial safety decisions. This architecture solves both by hybridizing cloud-scale LLMs with strict graph databases.</p>
+<p><strong>Architectural Pipeline:</strong></p>
+<ol type="1">
+<li><strong>Vision Proxy.</strong> Captures frames and handles API rate limiting, asynchronously uploading feed data to Google Gemini.</li>
+<li><strong>Logic Core.</strong> Enforces deterministic safety policies using Neo4j and Cypher. It normalizes AI inputs to static hazard nodes and maps them instantly to safety protocols.</li>
+<li><strong>Cloud HUD.</strong> A Streamlit dashboard bridging real-time local video with asynchronous cloud intelligence updates.</li>
+</ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Live Demo (GIF)</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Live Demo</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p><a href="images/Eco_Sentry_Cloud_Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Eco_Sentry_Cloud_Architecture.png" class="img-fluid"></a></p>
@@ -367,26 +203,123 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="https://github.com/Najo1on1/Cloud-Hybrid-Eco-Sentry" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
-<hr>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Cloud-Hybrid-Eco-Sentry" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Multimodal AI:</strong> Google Gemini API</p>
+    <p><strong>Graph Engine:</strong> Neo4j / Cypher</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+
+    <p class="glow-text mb-2" style="font-weight: 700;">METHODOLOGY_BRIDGE</p>
+    <span class="tech-tag" style="background: rgba(139, 92, 246, 0.1); color: var(--accent-violet); border: 1px solid rgba(139, 92, 246, 0.3);">Semantic: Gemini (Observation)</span><br>
+    <span style="color: var(--text-muted); margin-left: 1rem;">↓ Strictly Anchored By ↓</span><br>
+    <span class="tech-tag mt-1" style="background: rgba(0, 229, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 229, 255, 0.3);">Symbolic: Neo4j (Action)</span>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">FRICTION_LOG: Video Freezing</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> Synchronous API calls to Gemini blocked the main thread, freezing the security feed.<br>
+    <strong>Resolution:</strong> Engineered an asynchronous "Pulse" architecture, decoupling the video feed from the intelligence loop to manage latency and API costs simultaneously.</p>
+  </div>
+</div>
+</div>
+</div>
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
 </section>
-<section id="carbon-aware-agentic-scheduler" class="level1">
-<h1>2. Carbon-Aware Agentic Scheduler</h1>
-<p><span class="tech-tag">AWS Lambda</span> <span class="tech-tag">LangGraph</span> <span class="tech-tag">Multi-Agent</span></p>
-<p>A system that schedules AI training jobs based on the carbon intensity of the electricity grid.</p>
+<section id="carbon-aware-agentic-scheduler" class="level2">
+<h2 class="anchored" data-anchor-id="carbon-aware-agentic-scheduler">2. Carbon-Aware Agentic Scheduler</h2>
+<div class="grid">
+<div class="g-col-12 g-col-lg-8">
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+Multi-Agent Orchestration on AWS Lambda
+</p>
+<p>A distributed system that schedules and executes heavy AI training jobs dynamically based on the real-time carbon intensity of the electricity grid, utilizing serverless architecture to scale down to zero when idle.</p>
+<p><strong>Architectural Pipeline:</strong></p>
+<ol type="1">
+<li><strong>Grid Telemetry.</strong> Ingests live carbon intensity API data to monitor regional power grids.</li>
+<li><strong>LangGraph Orchestration.</strong> A multi-agent supervisor evaluates grid thresholds and determines optimal routing execution paths.</li>
+<li><strong>Payload Execution.</strong> Triggers containerized workloads via AWS Lambda once environmental and cost parameters are met.</li>
+</ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">System Architecture</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p><a href="images/Carbon-Aware Scheduler System Architecture_diagram.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Carbon-Aware Scheduler System Architecture_diagram.png" class="img-fluid"></a></p>
-<p><a href="https://github.com/Najo1on1/carbon-aware-scheduler" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
-<hr>
+</div>
+</div>
+</div>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/carbon-aware-scheduler" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Compute Core:</strong> AWS Lambda</p>
+    <p><strong>Orchestration:</strong> LangGraph Multi-Agent</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">INFRASTRUCTURE_LOG</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Design Decision:</strong> Utilizing AWS Lambda for the executor agents ensures that the orchestration infrastructure itself does not contribute baseline idle emissions while waiting for the grid to "turn green."</p>
+  </div>
+</div>
+</div>
+</div>
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
 </section>
-<section id="serverless-ai-pipeline" class="level1">
-<h1>3. Serverless AI Pipeline</h1>
-<p><span class="tech-tag">AWS Greengrass</span> <span class="tech-tag">IoT Core</span> <span class="tech-tag">PyTorch</span></p>
-<p>Sub-100ms defect detection for manufacturing using AWS IoT Core.</p>
+<section id="serverless-ai-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="serverless-ai-pipeline">3. Serverless AI Pipeline</h2>
+<div class="grid">
+<div class="g-col-12 g-col-lg-8">
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+Sub-100ms Quality Inspection on AWS IoT Core
+</p>
+<p>An enterprise-grade computer vision pipeline designed for high-throughput manufacturing. It bridges factory floor hardware with scalable cloud inference.</p>
+<p><strong>Architectural Pipeline:</strong></p>
+<ol type="1">
+<li><strong>Edge Ingestion.</strong> Factory floor cameras stream localized defect data via MQTT protocols to AWS IoT Core.</li>
+<li><strong>Serverless Inference.</strong> AWS Lambda triggers a containerized PyTorch model to run bounding-box inference on incoming payloads.</li>
+<li><strong>Quality Routing.</strong> Results are logged into DynamoDB, triggering downstream mechanical sorting alerts.</li>
+</ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">System Architecture</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p><a href="images/Serverless AI Pipeline for Quality Inspection description.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Serverless AI Pipeline for Quality Inspection description.png" class="img-fluid"></a></p>
-<p><a href="https://github.com/Najo1on1/Serverless-AI-Pipeline-for-High-Throughput-Quality-Inspection-on-AWS" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
+</div>
+</div>
+</div>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Serverless-AI-Pipeline-for-High-Throughput-Quality-Inspection-on-AWS" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Data Pipeline:</strong> AWS Greengrass &amp; IoT Core</p>
+    <p><strong>Inference Engine:</strong> PyTorch</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-red);">FRICTION_LOG: Cold Start Latency</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> Initial invocations of the PyTorch Lambda function suffered multi-second cold starts, violating the sub-100ms SLA for the assembly line.<br>
+    <strong>Resolution:</strong> Packaged the model inside an optimized ECR container image and utilized AWS Provisioned Concurrency to keep inference instances "warm" during active manufacturing shifts.</p>
+  </div>
+</div>
+</div>
+</div>
 <p><br><br></p>
-<div style="display: flex; justify-content: space-between;">
-<p><a href="./01_edge.html" class="btn btn-outline-secondary btn-lg" role="button">← <strong>Previous: Edge AI</strong></a> <a href="./03_data.html" class="btn btn-primary btn-lg" role="button"><strong>Next: Data &amp; Research</strong> →</a></p>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; margin-bottom: 2rem;">
+<p><a href="01_edge.html" class="btn btn-outline-secondary" style="font-weight: 700; padding: 0.75rem 1.5rem; font-family: var(--font-mono); border-color: var(--border-subtle) !important; color: var(--text-muted) !important;">← BACK TO EDGE NODES</a> <a href="03_data.html" class="btn btn-primary" style="font-weight: 700; padding: 0.75rem 1.5rem; font-family: var(--font-mono);">NEXT DATA PIPELINES →</a></p>
 </div>
 
 
@@ -395,19 +328,6 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

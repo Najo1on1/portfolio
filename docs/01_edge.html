@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Edge AI &amp; Local Inference – JM</title>
+<title>Edge AI &amp; Local Inference – Jonathan Muwanguzi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b3c0c3e62de078130f8a0482bc93c796.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e9cf4e5a4f009a0df8a71ec0cb26ac22.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-b3c0c3e62de078130f8a0482bc93c796.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4d4f7ac2dd9178e02a0d3f620f0dfc7f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -76,174 +72,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -251,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">JM</span>
+    <span class="navbar-title">Jonathan Muwanguzi</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -266,15 +103,19 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./01_edge.html" aria-current="page"> 
-<span class="menu-text">Edge AI</span></a>
+<span class="menu-text">Edge &amp; Offline</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./02_cloud.html"> 
-<span class="menu-text">Cloud</span></a>
+<span class="menu-text">Cloud &amp; Hybrid</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./03_data.html"> 
-<span class="menu-text">Data</span></a>
+<span class="menu-text">Data &amp; Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./04_methodology.html"> 
+<span class="menu-text">Methodology</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -291,7 +132,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -299,27 +139,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#green-ai-cognitive-pipeline" id="toc-green-ai-cognitive-pipeline" class="nav-link active" data-scroll-target="#green-ai-cognitive-pipeline">1. Green-AI Cognitive Pipeline</a></li>
-  <li><a href="#eco-sentry-cognitive-edge-security" id="toc-eco-sentry-cognitive-edge-security" class="nav-link" data-scroll-target="#eco-sentry-cognitive-edge-security">2. Eco Sentry: Cognitive Edge Security</a></li>
-  <li><a href="#civic-pulse-monitor-smart-city-ops" id="toc-civic-pulse-monitor-smart-city-ops" class="nav-link" data-scroll-target="#civic-pulse-monitor-smart-city-ops">3. Civic Pulse Monitor (Smart City Ops)</a></li>
-  <li><a href="#aegis-overwatch-efficiency-route" id="toc-aegis-overwatch-efficiency-route" class="nav-link" data-scroll-target="#aegis-overwatch-efficiency-route">4. Aegis Overwatch (Efficiency Route)</a></li>
+  <li><a href="#civic-pulse-monitor-smart-city-ops" id="toc-civic-pulse-monitor-smart-city-ops" class="nav-link active" data-scroll-target="#civic-pulse-monitor-smart-city-ops">2. Civic Pulse Monitor (Smart City Ops)</a></li>
+  <li><a href="#eco-sentry-cognitive-edge-security" id="toc-eco-sentry-cognitive-edge-security" class="nav-link" data-scroll-target="#eco-sentry-cognitive-edge-security">3. Eco Sentry: Cognitive Edge Security</a></li>
+  <li><a href="#green-ai-cognitive-pipeline" id="toc-green-ai-cognitive-pipeline" class="nav-link" data-scroll-target="#green-ai-cognitive-pipeline">4. Green-AI Cognitive Pipeline</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Edge AI &amp; Local Inference</h1>
-<p class="subtitle lead">Engineering privacy-first systems on consumer hardware (NVIDIA RTX 4060 Ti).</p>
+<p class="subtitle lead">Engineering privacy-first systems on consumer hardware (NVIDIA card).</p>
 </div>
 
 
@@ -336,92 +177,181 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="green-ai-cognitive-pipeline" class="level1">
-<h1>1. Green-AI Cognitive Pipeline</h1>
-<p><span class="tech-tag">Local LLM (Mistral)</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">LangGraph</span> <span class="tech-tag">Energy-Aware</span></p>
-<p>The “Flagship” Local Agent. This system replaces cloud APIs with a quantized local model to reduce carbon footprint and ensure data privacy.</p>
-<ul>
-<li><strong>Key Innovation:</strong> A “Real-Time Energy Router” that measures the exact Joules per token.</li>
-<li><strong>Architecture:</strong> ReAct Agent switching between Graph (Structured) and Vector (Unstructured) memory.</li>
-</ul>
+<p><br></p>
+<div class="grid">
+<section id="urban-pulse-engine" class="level2 g-col-12 g-col-lg-8">
+<h2 class="anchored" data-anchor-id="urban-pulse-engine">1. Urban Pulse Engine</h2>
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+District-Level Traffic Orchestration via Reinforcement Learning
+</p>
+<p>The flagship local orchestration engine. This system scales edge computing from single-node detection to macro-grid control, orchestrating 64 independent traffic lanes across a 20-intersection grid without relying on cloud APIs.</p>
+<p><strong>Architectural Pipeline:</strong></p>
+<ol type="1">
+<li><strong>Digital Twin.</strong> Ingests traffic telemetry and maps it to a deterministic spatial logic layer.</li>
+<li><strong>Cognitive Validation.</strong> Utilizes a zero-shot transformer to validate traffic state vectors.</li>
+<li><strong>Active Orchestration.</strong> A Proximal Policy Optimization (PPO) Agent actively manages light timings to mitigate terminal gridlock.</li>
+</ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Live Demo (GIF)</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Deployment Telemetry</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><a href="images/Green_AI_Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/Green_AI_Architecture.png" class="img-fluid"></a></p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><a href="images/Green_AI_Demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/Green_AI_Demo.gif" class="img-fluid"></a></p>
+<p><a href="images/traffic_2nd.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="images/traffic_2nd.gif" class="img-fluid"></a></p>
 </div>
 </div>
 </div>
-<p><a href="https://github.com/Najo1on1/Green-AI-Pipeline" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
-<hr>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Urban-Pulse" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
 </section>
-<section id="eco-sentry-cognitive-edge-security" class="level1">
-<h1>2. Eco Sentry: Cognitive Edge Security</h1>
-<p><span class="tech-tag">TinyLlama-1.1B</span> <span class="tech-tag">ChromaDB</span> <span class="tech-tag">Docker</span></p>
-<p>A “Cognitive Firewall” running on the Edge Node.</p>
-<ul>
-<li><strong>Problem:</strong> Traditional firewalls are rigid; Cloud SIEM is slow/expensive.</li>
-<li><strong>Solution:</strong> A local Vector Database (ChromaDB) learns traffic patterns. Anomalies trigger a local TinyLlama agent to explain <em>why</em> the packet is dangerous.</li>
-</ul>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Hardware:</strong> AMD CPU</p>
+    <p><strong>DB Anchor:</strong> DuckDB Spatial Extensions</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">FRICTION_LOG: Hardware Bottleneck</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> Severe GPU PCIe bus latency crippled RL training speeds.<br>
+    <strong>Resolution:</strong> Forcibly routed the PPO Agent off the NVIDIA card and onto the Ryzen 9 CPU, achieving &gt;3,000 FPS throughput.</p>
+
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-red);">FRICTION_LOG: Z-Axis Ambiguity</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Symptom:</strong> GPS telemetry overlapped at bridges and tunnels in Lucerne simulations.<br>
+    <strong>Resolution:</strong> Engineered a 3D-aware penalty matrix in GeoPandas to force snapping to correct bridge surfaces.</p>
+  </div>
+</div>
+</div>
+</div>
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
+<section id="civic-pulse-monitor-smart-city-ops" class="level2">
+<h2 class="anchored" data-anchor-id="civic-pulse-monitor-smart-city-ops">2. Civic Pulse Monitor (Smart City Ops)</h2>
+<div class="grid">
+<div class="g-col-12 g-col-lg-8">
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+Geospatial Graph Intelligence &amp; Local Llama 3
+</p>
+<p>A privacy-first Smart City architecture running entirely offline. Traditional hazard systems treat civic reports as context-blind rows in a database. Civic Pulse gives them a memory.</p>
+<p><strong>The Workflow:</strong></p>
+<p>This system federates structured civic logs with unstructured geospatial data. It utilizes local Llama 3 inference to semantically understand a hazard report, and then strictly validates that hazard against a Neo4j knowledge graph to determine true priority.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Live Demo (GIF)</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Live Demo</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><a href="images/civic_pulse_demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="images/civic_pulse_demo.gif" class="img-fluid"></a></p>
+</div>
+</div>
+</div>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Cognitive-Engine" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">METHODOLOGY_BRIDGE</p>
+    <span class="tech-tag" style="background: rgba(139, 92, 246, 0.1); color: var(--accent-violet); border: 1px solid rgba(139, 92, 246, 0.3);">Semantic: Ollama Llama 3</span><br>
+    <span style="color: var(--text-muted); margin-left: 1rem;">↓ Strictly Anchored By ↓</span><br>
+    <span class="tech-tag mt-1" style="background: rgba(0, 229, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 229, 255, 0.3);">Symbolic: Neo4j Graph DB</span>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">INFRASTRUCTURE_LOG</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Design Decision:</strong> Operating entirely offline ensures sensitive civic and geospatial hazard data never leaves the edge node, achieving 100% data sovereignty.</p>
+  </div>
+</div>
+</div>
+</div>
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
+</section>
+<section id="eco-sentry-cognitive-edge-security" class="level2">
+<h2 class="anchored" data-anchor-id="eco-sentry-cognitive-edge-security">3. Eco Sentry: Cognitive Edge Security</h2>
+<div class="grid">
+<div class="g-col-12 g-col-lg-8">
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+The Air-Gapped Cognitive Firewall
+</p>
+<p>Traditional rule-based firewalls are too rigid for modern IoT networks, and sending logs to Cloud SIEMs incurs massive latency and cost.</p>
+<p><strong>The Solution:</strong></p>
+<p>A local Vector Database (ChromaDB) acts as the memory core, continuously learning traffic baseline patterns. When an anomaly is detected, instead of just blocking it, a local TinyLlama agent analyzes the vector distance to explain <em>why</em> the packet is anomalous in plain English.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Live Demo</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p><a href="images/Eco_Sentry_Edge_Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="images/Eco_Sentry_Edge_Architecture.png" class="img-fluid"></a></p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p><a href="images/Eco_Sentry_Edge_Demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="images/Eco_Sentry_Edge_Demo.gif" class="img-fluid"></a></p>
 </div>
 </div>
 </div>
-<p><a href="https://github.com/Najo1on1/Eco-Sentry-Integrated-Edge-AI-Security-Pipeline" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
-<hr>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Eco-Sentry-Integrated-Edge-AI-Security-Pipeline" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">METHODOLOGY_BRIDGE</p>
+    <span class="tech-tag" style="background: rgba(139, 92, 246, 0.1); color: var(--accent-violet); border: 1px solid rgba(139, 92, 246, 0.3);">Semantic: TinyLlama 1.1B</span><br>
+    <span style="color: var(--text-muted); margin-left: 1rem;">↓ Strictly Anchored By ↓</span><br>
+    <span class="tech-tag mt-1" style="background: rgba(0, 229, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 229, 255, 0.3);">Symbolic: ChromaDB Vector Space</span>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-red);">FRICTION_LOG: Hardware Limits</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Constraint:</strong> IoT edge nodes possess highly constrained memory overhead.<br>
+    <strong>Resolution:</strong> Utilizing TinyLlama ensures the semantic reasoning engine operates securely within fractional VRAM footprints, allowing ChromaDB to hold priority.</p>
+  </div>
+</div>
+</div>
+</div>
+<hr style="border-color: var(--border-subtle); margin: 4rem 0;">
 </section>
-<section id="civic-pulse-monitor-smart-city-ops" class="level1">
-<h1>3. Civic Pulse Monitor (Smart City Ops)</h1>
-<p><span class="tech-tag">Ollama (Llama 3)</span> <span class="tech-tag">Neo4j</span> <span class="tech-tag">PyDeck</span></p>
-<p>A privacy-first Smart City architecture running entirely offline.</p>
-<ul>
-<li><strong>Problem:</strong> Traditional systems treat civic reports as context-blind rows.</li>
-<li><strong>Solution:</strong> Federates structured logs with unstructured geospatial data, utilizing local Llama 3 inference and graph logic to autonomously identify high-priority hazards.</li>
-</ul>
+<section id="green-ai-cognitive-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="green-ai-cognitive-pipeline">4. Green-AI Cognitive Pipeline</h2>
+<div class="grid">
+<div class="g-col-12 g-col-lg-8">
+<p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">
+Carbon-Aware Local Agentic Routing
+</p>
+<p>The true cost of Generative AI is power consumption. This architecture replaces heavy cloud APIs with quantized local models to drastically reduce carbon footprint while maintaining strict data privacy.</p>
+<p><strong>Key Innovation:</strong></p>
+<p>A “Real-Time Energy Router” that physically measures the exact Joules consumed per generated token. The ReAct Agent intelligently switches between Graph (Structured) and Vector (Unstructured) memory depending on the query to optimize compute cycles.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Live Demo (GIF)</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p><a href="images/civic_pulse_demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/civic_pulse_demo.gif" class="img-fluid"></a></p>
-</div>
-</div>
-</div>
-<p><a href="https://github.com/Najo1on1/civic_pulse_monitor" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
-<hr>
-</section>
-<section id="aegis-overwatch-efficiency-route" class="level1">
-<h1>4. Aegis Overwatch (Efficiency Route)</h1>
-<p><span class="tech-tag">Ollama (LLaVA)</span> <span class="tech-tag">OpenCV</span> <span class="tech-tag">Neo4j</span></p>
-<p>A decentralized drone safety pipeline.</p>
-<ul>
-<li><strong>Workflow:</strong> “See-Think-Act” loop.</li>
-<li><strong>Tech:</strong> Uses Ollama (LLaVA) for vision and Neo4j for protocol enforcement, entirely offline.</li>
-</ul>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Live Demo (GIF)</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">System Architecture</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Live Demo</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<p><a href="images/Aegis_Drone_Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Aegis_Drone_Architecture.png" class="img-fluid"></a></p>
+<p><a href="images/Green_AI_Architecture.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="images/Green_AI_Architecture.png" class="img-fluid"></a></p>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<p><a href="images/Aegis_Drone_Demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="images/Aegis_Drone_Demo.gif" class="img-fluid"></a></p>
+<p><a href="images/Green_AI_Demo.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="images/Green_AI_Demo.gif" class="img-fluid"></a></p>
 </div>
 </div>
 </div>
-<p><a href="https://github.com/Najo1on1/Local-Eco-Sentry" class="btn btn-primary" role="button"><strong>View Code on GitHub</strong></a></p>
-<p><br><br></p>
-<div style="display: flex; justify-content: flex-end;">
-<p><a href="./02_cloud.html" class="btn btn-primary btn-lg" role="button"><strong>Next: Cloud &amp; Hybrid Architectures</strong> →</a></p>
+<div class="d-flex gap-3 flex-wrap mt-3">
+  <a href="https://github.com/Najo1on1/Green-AI-Pipeline" target="_blank" class="btn btn-primary btn-sm" style="font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; padding: 0.5rem 1rem;">[GITHUB]</a>
+</div>
+</div>
+<div class="g-col-12 g-col-lg-4">
+<div style="position: sticky; top: 2rem;">
+  <div class="sre-terminal">
+    <p class="glow-text mb-2" style="font-weight: 700;">SYSTEM_METADATA</p>
+    <p><strong>Primary Model:</strong> Local LLM (Mistral)</p>
+    <p><strong>Orchestration:</strong> LangGraph Agent</p>
+    
+    <hr style="border-color: var(--border-subtle); margin: 1rem 0;">
+    
+    <p class="glow-text mb-2" style="font-weight: 700; color: var(--friction-amber);">TELEMETRY_OBSERVATION</p>
+    <p style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 0;"><strong>Optimization:</strong> By monitoring the hardware's power draw at the thread level, the LangGraph supervisor can terminate reasoning loops that exceed the mathematical Joules-per-token threshold.</p>
+  </div>
+</div>
+</div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; margin-bottom: 2rem;">
+<p><a href="index.html" class="btn btn-outline-secondary" style="font-weight: 700; padding: 0.75rem 1.5rem; font-family: var(--font-mono); border-color: var(--border-subtle) !important; color: var(--text-muted) !important;">← BACK HOME</a> <a href="02_cloud.html" class="btn btn-primary" style="font-weight: 700; padding: 0.75rem 1.5rem; font-family: var(--font-mono);">NEXT CLOUD SYSTEMS →</a></p>
 </div>
 
 
@@ -430,19 +360,6 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
