@@ -13,11 +13,11 @@ format:
 
 <br>
 
+## 1. Urban Pulse Engine
+
 ::::: {.grid}
 
 :::: {.g-col-12 .g-col-lg-8}
-
-## 1. Urban Pulse Engine
 
 <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; margin-top: -0.5rem;">District-Level Traffic Orchestration via Reinforcement Learning</p>
 
