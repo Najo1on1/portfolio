@@ -22,19 +22,19 @@ page-layout: full
   <div class="marquee-content">
     <img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png" title="AWS Solutions Architect">
     <img src="images/AWS Cloud Quest Generative AI Architect - Training Badge.png" title="GenAI Architect">
-    <img src="images/Google Cloud Fundamentals Core Infrastructure.png" title="GCP Core Infra">
+    <img src="images/Google Cloud Fundamentals Core Infrastructure.png" title="GCP Core Infrastructure">
     <img src="images/Build a Data Warehouse with BigQuery Skill Badge.png" title="BigQuery Data Warehouse">
     <img src="images/AWS Cloud Quest Machine Learning - Training Badge.png" title="AWS Machine Learning">
     <img src="images/Prompt Design in Vertex AI Skill Badge.png" title="Vertex AI Prompt Design">
     <img src="images/AWS Academy Graduate - Cloud Foundations - Training Badge.png" title="Cloud Foundations">
     
-    <img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png">
-    <img src="images/AWS Cloud Quest Generative AI Architect - Training Badge.png">
-    <img src="images/Google Cloud Fundamentals Core Infrastructure.png">
-    <img src="images/Build a Data Warehouse with BigQuery Skill Badge.png">
-    <img src="images/AWS Cloud Quest Machine Learning - Training Badge.png">
-    <img src="images/Prompt Design in Vertex AI Skill Badge.png">
-    <img src="images/AWS Academy Graduate - Cloud Foundations - Training Badge.png">
+    <img src="images/AWS Cloud Quest Solutions Architect - Training Badge.png" title="AWS Solutions Architect">
+    <img src="images/AWS Cloud Quest Generative AI Architect - Training Badge.png" title="GenAI Architect">
+    <img src="images/Google Cloud Fundamentals Core Infrastructure.png" title="GCP Core Infrastructure">
+    <img src="images/Build a Data Warehouse with BigQuery Skill Badge.png" title="BigQuery Data Warehouse">
+    <img src="images/AWS Cloud Quest Machine Learning - Training Badge.png" title="AWS Machine Learning">
+    <img src="images/Prompt Design in Vertex AI Skill Badge.png" title="Vertex AI Prompt Design">
+    <img src="images/AWS Academy Graduate - Cloud Foundations - Training Badge.png" title="Cloud Foundations">
   </div>
 </div>
 ```
